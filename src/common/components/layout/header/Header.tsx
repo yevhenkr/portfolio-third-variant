@@ -3,6 +3,7 @@ import styled from "styled-components";
 import logo from "../../../../assets/img/logo.png";
 import { FlexWrapper } from '../../ui/flexWrapper/FlexWrapper';
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
+import SocialMediaIcons from "../footer/footerSocialMedia/socialMediaIcons";
 
 
 export const Header = () => {
@@ -11,7 +12,7 @@ export const Header = () => {
             <Logo src={logo} alt={"Logo images"}/>
             <FlexWrapper>
                 <HeaderMenu />
-                <FlexWrapper></FlexWrapper>
+                <SocialMediaIcons/>
             </FlexWrapper>
         </HeaderWrap>
     );
