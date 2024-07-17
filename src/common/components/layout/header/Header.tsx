@@ -8,9 +8,9 @@ import SocialMediaIcons from "../footer/footerSocialMedia/socialMediaIcons";
 
 export const Header = () => {
     return (
-        <HeaderWrap>
+        <HeaderWrap flexDirection={"row"} display={"flex"}>
             <Logo src={logo} alt={"Logo images"}/>
-            <FlexWrapper>
+            <FlexWrapper flexDirection={"row"} display={"flex"}>
                 <HeaderMenu />
                 <SocialMediaIcons/>
             </FlexWrapper>
@@ -18,7 +18,7 @@ export const Header = () => {
     );
 };
 
-const HeaderWrap = styled.header`
+const HeaderWrap = styled(FlexWrapper)`
     background-color: red;
 `;
 
