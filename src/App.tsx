@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Main} from "./common/components/layout/main/main";
 import {Header} from "./common/components/layout/header/Header";
+import {About} from "./common/components/layout/sections/about/About";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <AppWrapper>
             <Header/>
             <Main/>
+            <About/>
         </AppWrapper>
     );
 }

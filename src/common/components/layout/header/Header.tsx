@@ -20,6 +20,7 @@ export const Header = () => {
 
 const HeaderWrap = styled(FlexWrapper)`
     background-color: red;
+    margin: 0 200px;
 `;
 
 const Logo = styled.img`

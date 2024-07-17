@@ -17,6 +17,7 @@ export const Main = () => {
 const StyledMain = styled.main`
     display: flex;
     flex-direction: row;
+    margin: 0 200px;
 `
 const StyledH1 = styled.h1``
 const StyledH2 = styled.h2``

@@ -4,14 +4,14 @@ import {myTheme} from "../../../../styles/Theme.styled";
 
 type TitleProps = {
   wordOne: string
-  wordSecond: string
+  wordSecond?: string
 }
 
 export const TitleSection = (props: TitleProps) => {
   return (
       <StyledH2>
           <SpanFirst>{`${props.wordOne}`} </SpanFirst>
-          <SpanSecond>{props.wordSecond}</SpanSecond>
+          {props.wordSecond ? <SpanSecond>{props.wordSecond}</SpanSecond>:""}
       </StyledH2>
   )
 }
