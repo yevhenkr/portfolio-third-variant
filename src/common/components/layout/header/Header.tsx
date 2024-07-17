@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import logo from "../../../../assets/img/logo.png";
 import { FlexWrapper } from '../../ui/flexWrapper/FlexWrapper';
+import {HeaderMenu} from "./headerMenu/HeaderMenu";
 
 
 export const Header = () => {
@@ -9,7 +10,7 @@ export const Header = () => {
         <HeaderWrap>
             <Logo src={logo} alt={"Logo images"}/>
             <FlexWrapper>
-                <FlexWrapper></FlexWrapper>
+                <HeaderMenu />
                 <FlexWrapper></FlexWrapper>
             </FlexWrapper>
         </HeaderWrap>
