@@ -21,18 +21,53 @@ export const myTheme = {
         }
     },
     screen: {
-            extraLarge: "1200px",
-            large: "992px",
-            medium: "768px",
-            small: "576px",
+        extraLarge: "1200px",
+        large: "992px",
+        medium: "768px",
+        small: "576px",
     },
     headerHeight: "20px"
 }
 
 export const mySections = [
-        ['#Home','Home'],
-        ['#About', 'About'],
-        ['#Tech Stack', 'Tech Stack'],
-        ['#Projects', 'Projects'],
-        ['#Contact', 'Contact'],
-    ]
+    ['#Home', 'Home'],
+    ['#About', 'About'],
+    ['#Tech Stack', 'Tech Stack'],
+    ['#Projects', 'Projects'],
+    ['#Contact', 'Contact'],
+]
+
+export const myProjects = [
+    {
+        name: "Project Tile goes here",
+        description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+        techStack: "Tech stack :",
+        techStackDetails: "HTML , JavaScript, SASS, React",
+    },
+    {
+        name: "Project Tile goes here",
+        description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+        techStackDetails: "HTML , JavaScript, SASS, React",
+    },
+    {
+        name: "Project Tile goes here",
+        description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+        techStackDetails: "HTML , JavaScript, SASS, React",
+    },
+    {
+        name: "Project Tile goes here",
+        description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+        techStackDetails: "HTML , JavaScript, SASS, React",
+    },
+    {
+        name: "Project Tile goes here",
+        description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+        techStackDetails: "HTML , JavaScript, SASS, React",
+    },
+    {
+        name: "Project Tile goes here",
+        description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+        techStackDetails: "HTML , JavaScript, SASS, React",
+    }
+
+]
