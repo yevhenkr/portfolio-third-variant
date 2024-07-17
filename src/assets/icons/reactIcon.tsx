@@ -23,4 +23,4 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
-export const HTMLIcon = memo(SvgComponent);
+export const ReactIcon = memo(SvgComponent);

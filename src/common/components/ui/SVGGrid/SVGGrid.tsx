@@ -17,16 +17,17 @@ export const SVGGrid: React.FC<SVGGridProps> = ({ icons }) => {
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 16px;
-  padding: 16px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 100px;
 `;
 
 const GridItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+    flex: 1;
+  //padding: 8px;
+  //border: 1px solid #ddd;
+  //border-radius: 8px;
 `;

@@ -16,4 +16,4 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
-export const CSSIcon = memo(SvgComponent);
+export const ReduxIcon = memo(SvgComponent);

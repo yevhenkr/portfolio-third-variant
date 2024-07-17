@@ -18,4 +18,4 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
-export const HTMLIcon = memo(SvgComponent);
+export const GitHubIcon = memo(SvgComponent);
