@@ -30,8 +30,6 @@ export const HeaderMenu = (props: PropsType) => {
                 <StyledLi key={index} onClick={() => handleClick(section[1])}>
                     <StyledLink>
                         {section[1]}
-                        <Mask><span>{section[1]}</span></Mask>
-                        <Mask><span>{section[1]}</span></Mask>
                     </StyledLink>
                 </StyledLi>
             ))}
@@ -63,39 +61,6 @@ const StyledLi = styled.li`
     display: flex;
     align-items: center;
     position: relative;
-
-    :hover {
-        background-color: transparent;
-
-        &::before {
-            content: '';
-            display: inline-block;
-            height: 3px;
-            background-color: ${myTheme.color.textColor};
-            position: absolute;
-            top: 50%;
-            left: -10px;
-            right: -10px;
-            z-index: 1;
-        }
-    }
-`;
-
-const Mask = styled.span`
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 50%;
-    overflow-y: hidden;
-
-    & + & {
-        top: 50%;
-
-        span {
-            display: inline-block;
-            transform: translateY(-50%);
-        }
-    }
 `;
 
 const StyledLink = styled.a`
@@ -110,18 +75,6 @@ const StyledLink = styled.a`
     font-family: DMSans, sans-serif;
     font-size: 20px;
     &:hover {
-        color: transparent;
-
-        ${Mask} {
-            transform: translateX(5px);
-            transition: transform 0.5s ease;
-
-            color: ${myTheme.color.textColor};
-
-            & + ${Mask} {
-                transform: translateX(-5px);
-                transition: transform 0.5s ease;
-            }
-        }
+        color: blue;
     }
 `;

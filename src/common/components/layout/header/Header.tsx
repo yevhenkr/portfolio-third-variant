@@ -26,7 +26,6 @@ const HeaderWrap = styled(FlexWrapper)`
     max-width: 1200px;
     width: 100%;
     border: 1px solid red;
-    //margin: 0 auto;
 `;
 
 const Logo = styled.img`
