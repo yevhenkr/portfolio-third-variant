@@ -13,7 +13,7 @@ export const Experiens = () => {
     return (
         <>
             <TitleStyled>Work Experience</TitleStyled>
-            <FlexWrapper display={"flex"} flexDirection={"column"}>
+            <FlexWrapper display={"flex"} flexDirection={"column"} margin={" 0 0 200px 0"}>
 
                 <WorkWrap >
                     <FlexWrapper display={"flex"} flexDirection={"row"} justify={"space-between"}>
@@ -46,7 +46,7 @@ export const Experiens = () => {
     );
 };
 
-const WorkWrap = styled.div`
+const WorkWrap = styled(FlexWrapper)`
     display: flex;
     flex-direction: column;
     padding-bottom: 24px;
