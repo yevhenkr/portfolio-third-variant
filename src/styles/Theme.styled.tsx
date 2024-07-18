@@ -2,7 +2,8 @@ export const myTheme = {
     color: {
         black: '#07253C',
         white: '#fff',
-        textColor: '#666666',
+        text: '#666666',
+        titel: '#42446E',
 
     },
 

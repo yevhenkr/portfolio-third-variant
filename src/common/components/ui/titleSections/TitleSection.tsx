@@ -33,7 +33,7 @@ const StyledH2 = styled.h2`
 const SpanFirst = styled.span`
     font-weight: ${myTheme.font.weights.regular};
     font-size: 35px;
-    color: ${myTheme.color.textColor};
+    color: ${myTheme.color.text};
 `
 const SpanSecond = styled.span`
     font-family: Poppins, sans-serif;

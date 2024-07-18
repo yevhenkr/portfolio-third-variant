@@ -46,7 +46,7 @@ const Menu = styled.ul`
     right: 10px;
     padding: 0;
     margin-right: 50px;
-    color: ${myTheme.color.textColor};
+    color: ${myTheme.color.text};
 
     @media (max-width: ${myTheme.screen.medium}) {
         display: none;
@@ -70,7 +70,7 @@ const StyledLink = styled.a`
     text-decoration: none;
     text-align: center;
     position: relative;
-    color: ${myTheme.color.textColor};
+    color: ${myTheme.color.text};
 
     font-family: DMSans, sans-serif;
     font-size: 20px;

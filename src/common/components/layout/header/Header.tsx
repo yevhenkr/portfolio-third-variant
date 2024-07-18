@@ -20,6 +20,7 @@ export const Header = () => {
 
 const HeaderWrap = styled(FlexWrapper)`
     position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
