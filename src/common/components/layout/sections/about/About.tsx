@@ -14,7 +14,8 @@ export const About = () => {
                 as your future website. It helps you to combine slides, panels and other components and export it as a
                 set of static files: HTML/CSS/JS.</AboutText>
             <Experiens/>
-            {/*<Education/>*/} TODO
+            {/*<Education/>*/}
+            {/*    TODO*/}
         </AboutSection>
     );
 };
