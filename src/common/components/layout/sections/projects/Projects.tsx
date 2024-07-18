@@ -39,6 +39,11 @@ export const Projects = () => {
     );
 };
 
+const ProjectsGrid = styled.div`
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+`
 const ProjectsSection = styled.section`
     display: flex;
     flex-direction: column;

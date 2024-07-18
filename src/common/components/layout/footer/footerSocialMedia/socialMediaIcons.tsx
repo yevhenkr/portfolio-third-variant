@@ -6,7 +6,7 @@ const SocialMediaIcons = () => {
     <SocialList>
       <SocialItem>
         <SocialLink href={'https://t.me/VasilenkoEvgen'} rel={'noreferrer'}>
-          <Icon iconId={'x'} />
+          <Icon iconId={'x'} viewBox="0 0 31 31" />
         </SocialLink>
       </SocialItem>
 
@@ -21,7 +21,7 @@ const SocialMediaIcons = () => {
 
       <SocialItem>
         <SocialLink href={'https://github.com/yevhenkr'} rel={'noreferrer'}>
-          <Icon iconId={'gitHub'} />{' '}
+          <Icon iconId={'gitHub'} viewBox="0 0 31 31"/>{' '}
         </SocialLink>
       </SocialItem>
     </SocialList>
