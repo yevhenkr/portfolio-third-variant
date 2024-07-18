@@ -20,6 +20,9 @@ const GridContainer = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(5, 1fr);
   gap: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
 `;
 
 const GridItem = styled.div`

@@ -10,12 +10,14 @@ import {ReduxIcon} from "../../../../../assets/icons/reduxIcon";
 import {SASSIcon} from "../../../../../assets/icons/sassIcon";
 import {GitIcon} from "../../../../../assets/icons/gitIcon";
 import {VscodeIcon} from "../../../../../assets/icons/vscodeIcon";
+import {TitleStyled} from "../about/About";
+import {myTheme} from "../../../../../styles/Theme.styled";
 
 export const TechStack = () => {
     const icons = [<HTMLIcon />, <CSSIcon />, <JSIcon />, <ReactIcon />, <ReduxIcon />, <SASSIcon />, <GitIcon />, <VscodeIcon />, <VscodeIcon />, <VscodeIcon />];
     return (
         <TechSection>
-            <TitleSection wordOne={"My Tech Stack"}/>
+            <Title>My Tech Stack</Title>
             <TechText> Technologies I’ve been working with recently</TechText>
             <SVGGrid icons={icons}/>
         </TechSection>
@@ -26,5 +28,17 @@ const TechSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 200px;`
-const TechText = styled.span``
+    padding-bottom: 214px;
+`
+
+const Title = styled(TitleStyled)`
+    margin-bottom: 50px;
+`
+
+const TechText = styled.span`
+    font-size: 32px;
+    color: ${myTheme.color.text};
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    padding-bottom: 124px;
+`
