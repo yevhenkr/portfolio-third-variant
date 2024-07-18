@@ -6,7 +6,7 @@ const SocialMediaIcons = () => {
     <SocialList>
       <SocialItem>
         <SocialLink href={'https://t.me/VasilenkoEvgen'} rel={'noreferrer'}>
-          <Icon iconId={'telegram'} />
+          <Icon iconId={'x'} />
         </SocialLink>
       </SocialItem>
 
@@ -20,20 +20,8 @@ const SocialMediaIcons = () => {
       </SocialItem>
 
       <SocialItem>
-        <SocialLink href={'https://www.codewars.com/users/yevhenkr'} rel={'noreferrer'}>
-          <Icon iconId={'codeWars'} />
-        </SocialLink>
-      </SocialItem>
-
-      <SocialItem>
         <SocialLink href={'https://github.com/yevhenkr'} rel={'noreferrer'}>
           <Icon iconId={'gitHub'} />{' '}
-        </SocialLink>
-      </SocialItem>
-
-      <SocialItem>
-        <SocialLink href={'mailto:vasilenkoevgen88@gmail.com'} rel={'noreferrer'}>
-          <Icon iconId={'email1'} iconId2={'email2'} viewBox={'0 0 60 60'} />{' '}
         </SocialLink>
       </SocialItem>
     </SocialList>
@@ -52,5 +40,9 @@ const SocialList = styled.ul`
 `
 const SocialItem = styled.li``
 const SocialLink = styled.a`
-  target: blank;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
 `

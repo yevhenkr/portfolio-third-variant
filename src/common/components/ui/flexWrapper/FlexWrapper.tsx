@@ -6,7 +6,7 @@ type FlexWrapperType = {
   gap?: string
   justify?: 'center' | 'flex-end' | 'flex-start' | 'space-around' | 'space-between' | 'space-evenly'
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse'
-  display?: 'inline-block' | 'inline' | 'flex'
+  display?: 'inline-block' | 'inline' | 'flex' | "grid"
   flex?: string
   max_width?: string
   min_width?: string
@@ -20,7 +20,6 @@ type FlexWrapperType = {
 
 export const FlexWrapper = styled.div<FlexWrapperType>`
   display: ${props => props.display || ''};
-  height: 100%;
   flex-direction: ${props => props.flexDirection || 'row'};
   justify-content: ${props => props.justify || 'flex-start'};
   align-items: ${props => props.align_i || 'stretch'};

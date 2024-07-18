@@ -52,7 +52,7 @@ const Menu = styled.ul`
     }
 
     li {
-        padding: 20px 40px;
+        padding: 20px 0;
     }
 `;
 

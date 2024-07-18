@@ -19,10 +19,15 @@ export const Header = () => {
 };
 
 const HeaderWrap = styled(FlexWrapper)`
+    position: fixed;
+    display: flex;
     background-color: red;
     margin: 0 200px;
 `;
 
 const Logo = styled.img`
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
 `;
 
