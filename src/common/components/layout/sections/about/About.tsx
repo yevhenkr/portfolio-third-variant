@@ -4,6 +4,7 @@ import {TitleSection} from "../../../ui/titleSections/TitleSection";
 import {Experiens} from "../experiens/Experiens";
 import {TechStack} from "../techStack/TechStack";
 import {myTheme} from "../../../../../styles/Theme.styled";
+import {Education} from "../education/Education";
 
 export const About = () => {
     return (
@@ -13,6 +14,7 @@ export const About = () => {
                 as your future website. It helps you to combine slides, panels and other components and export it as a
                 set of static files: HTML/CSS/JS.</AboutText>
             <Experiens/>
+            {/*<Education/>*/} TODO
         </AboutSection>
     );
 };
