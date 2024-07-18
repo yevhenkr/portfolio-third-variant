@@ -15,7 +15,6 @@ function App() {
             <Header/>
             <Main/>
             <About/>
-            {/*<Experiens/>*/}
             {/*<TechStack/>*/}
             {/*<Projects/>*/}
             {/*<MailMe/>*/}
