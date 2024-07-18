@@ -21,8 +21,12 @@ export const Header = () => {
 const HeaderWrap = styled(FlexWrapper)`
     position: fixed;
     display: flex;
-    background-color: red;
-    margin: 0 200px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid red;
+    //margin: 0 auto;
 `;
 
 const Logo = styled.img`

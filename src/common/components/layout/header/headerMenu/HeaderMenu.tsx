@@ -47,6 +47,9 @@ const Menu = styled.ul`
     position: relative;
     right: 10px;
     padding: 0;
+    margin-right: 50px;
+    color: ${myTheme.color.textColor};
+
     @media (max-width: ${myTheme.screen.medium}) {
         display: none;
     }
@@ -104,6 +107,8 @@ const StyledLink = styled.a`
     position: relative;
     color: ${myTheme.color.textColor};
 
+    font-family: DMSans, sans-serif;
+    font-size: 20px;
     &:hover {
         color: transparent;
 

@@ -46,6 +46,12 @@
   url("./assets/fonts/dmSans/DMSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+}@font-face {
+  font-family: DMSans;
+  src: url("./assets/fonts/dmSans/DMSans-Medium.woff2") format("woff2"),
+  url("./assets/fonts/dmSans/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 body {

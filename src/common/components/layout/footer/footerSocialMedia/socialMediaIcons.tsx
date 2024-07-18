@@ -34,8 +34,8 @@ const SocialList = styled.ul`
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: center;
-  width: 100%;
+  justify-content: end;
+    align-items: center;
   padding-left: 0;
 `
 const SocialItem = styled.li``
