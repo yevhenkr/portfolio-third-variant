@@ -4,6 +4,7 @@ import logo from "../../../../assets/img/logo.png";
 import { FlexWrapper } from '../../ui/flexWrapper/FlexWrapper';
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import SocialMediaIcons from "../footer/footerSocialMedia/socialMediaIcons";
+import {myTheme} from "../../../../styles/Theme.styled";
 
 
 export const Header = () => {
@@ -27,6 +28,8 @@ const HeaderWrap = styled(FlexWrapper)`
     max-width: 1200px;
     width: 100%;
     border: 1px solid red;
+    background-color: ${myTheme.color.white};
+    z-index: 2;
 `;
 
 const Logo = styled.img`

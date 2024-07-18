@@ -3,7 +3,10 @@ export const myTheme = {
         black: '#07253C',
         white: '#fff',
         text: '#666666',
-        titel: '#42446E',
+        title: '#42446E',
+        buttonBG: '#D7FFE0',
+        buttonText: '#018C0F',
+        bar: '#EBEAED',
 
     },
 

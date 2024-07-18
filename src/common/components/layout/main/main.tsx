@@ -30,10 +30,10 @@ const StyledMain = styled.main`
     font-size: 40px;
 `
 const StyledH1 = styled.h1`
-    color: ${myTheme.color.titel}
+    color: ${myTheme.color.title}
 `
 const StyledH2 = styled.h2`
-    color: ${myTheme.color.titel}
+    color: ${myTheme.color.title}
 `
 const StyledIcon = styled.img`
     max-width: 350px;

@@ -17,11 +17,10 @@ export const TitleSection = (props: TitleProps) => {
 }
 
 const StyledH2 = styled.h2`
-    text-align: center;
+    display: flex;
+    align-items: flex-start;
     column-gap: 10px;
     flex-direction: row;
-    justify-content: center;
-    display: flex;
     position: relative;
     margin-top: 0;
     margin-bottom: 80px;
