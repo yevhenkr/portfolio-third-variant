@@ -15,10 +15,10 @@ function App() {
             <Header/>
             <Main/>
             <About/>
-            {/*<TechStack/>*/}
-            {/*<Projects/>*/}
-            {/*<MailMe/>*/}
-            {/*<Footer/>*/}
+            <TechStack/>
+            <Projects/>
+            <MailMe/>
+            <Footer/>
         </AppWrapper>
     );
 }
