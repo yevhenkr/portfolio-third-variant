@@ -78,7 +78,10 @@ const ProjectsSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 200px;`
+    margin: 0 200px;
+    margin-bottom: 184px;
+`
+
 
 const SubTitle = styled.h3``
 const NameProject = styled.h4`
