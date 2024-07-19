@@ -36,7 +36,6 @@ const StyledHeaderMenu = styled(HeaderMenu)`
 const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
-
 `
 
 const SmallStyled = styled.small`

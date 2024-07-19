@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {TitleSection} from "../../../ui/titleSections/TitleSection";
 import {Experiens} from "../experiens/Experiens";
-import {TechStack} from "../techStack/TechStack";
 import {myTheme} from "../../../../../styles/Theme.styled";
-import {Education} from "../education/Education";
 
 export const About = () => {
     return (
@@ -22,12 +19,10 @@ export const About = () => {
 
 export const TitleStyled = styled.h2`
     margin-bottom: 38px;
-    font-family: Poppins, sans-serif;
     font-size: 42px;
     font-weight: bold;
     color: ${myTheme.color.title};
 `
-
 
 const AboutSection = styled.section`
     display: flex;
@@ -35,6 +30,7 @@ const AboutSection = styled.section`
     max-width: 710px;
     justify-content: flex-start;
 `
+
 const AboutText = styled.p`
     display: flex;
     flex-direction: column;

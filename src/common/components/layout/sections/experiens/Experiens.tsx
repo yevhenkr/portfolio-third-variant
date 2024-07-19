@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {TitleSection} from "../../../ui/titleSections/TitleSection";
 import {FlexWrapper} from "../../../ui/flexWrapper/FlexWrapper";
 import {HouseIcon} from "../../../../../assets/icons/houseIcon";
 import {LocationIcon} from "../../../../../assets/icons/locationIcon";

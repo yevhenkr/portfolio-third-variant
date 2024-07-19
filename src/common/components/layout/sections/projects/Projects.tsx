@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {TitleSection} from "../../../ui/titleSections/TitleSection";
 import {FlexWrapper} from "../../../ui/flexWrapper/FlexWrapper";
 import imgProject from "../../../../../assets/img/ProjecView.jpg";
 import {CalendarIcon} from "../../../../../assets/icons/calendarIcon";
@@ -13,7 +12,7 @@ import {myProjects, myTheme} from "../../../../../styles/Theme.styled";
 export const Projects = () => {
     return (
         <ProjectsSection>
-            <TitleSection wordOne={"Projects"}/>
+            <Title>Projects</Title>
             <SubTitle>Things I’ve built so far</SubTitle>
             <ProjectsGrid>
                 {myProjects.map(proj => (
@@ -83,7 +82,19 @@ const ProjectsSection = styled.section`
 `
 
 
-const SubTitle = styled.h3``
+const Title = styled.h2`
+    font-weight: bold;
+    font-size: 48px;
+    color: ${myTheme.color.title};
+    margin-bottom: 50px;
+`
+const SubTitle = styled.h3`
+    font-weight: 400;
+    font-size: 32px;
+    color: ${myTheme.color.text};
+    margin-bottom: 110px;
+`
+
 const NameProject = styled.h4`
     font-size: 28px;
     font-weight: 500;

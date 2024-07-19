@@ -1,5 +1,4 @@
 import React from 'react';
-import {TitleSection} from "../../../ui/titleSections/TitleSection";
 import styled from "styled-components";
 import {SVGGrid} from "../../../ui/SVGGrid/SVGGrid";
 import {CSSIcon} from "../../../../../assets/icons/cssIcon";
@@ -10,7 +9,6 @@ import {ReduxIcon} from "../../../../../assets/icons/reduxIcon";
 import {SASSIcon} from "../../../../../assets/icons/sassIcon";
 import {GitIcon} from "../../../../../assets/icons/gitIcon";
 import {VscodeIcon} from "../../../../../assets/icons/vscodeIcon";
-import {TitleStyled} from "../about/About";
 import {myTheme} from "../../../../../styles/Theme.styled";
 import {GitBigIcon} from "../../../../../assets/icons/gitBigIcon";
 import {MenIcon} from "../../../../../assets/icons/menIcon";
@@ -20,7 +18,7 @@ export const TechStack = () => {
     return (
         <TechSection>
             <Title>My Tech Stack</Title>
-            <TechText> Technologies I’ve been working with recently</TechText>
+            <SubTitle> Technologies I’ve been working with recently</SubTitle>
             <SVGGrid icons={icons}/>
         </TechSection>
     );
@@ -33,14 +31,15 @@ const TechSection = styled.section`
     padding-bottom: 214px;
 `
 
-const Title = styled(TitleStyled)`
+const Title = styled.h2`
+    font-weight: bold;
+    font-size: 48px;
+    color: ${myTheme.color.title};
     margin-bottom: 50px;
 `
-
-const TechText = styled.span`
+const SubTitle = styled.h3`
+    font-weight: 400;
     font-size: 32px;
     color: ${myTheme.color.text};
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
-    padding-bottom: 124px;
+    margin-bottom: 110px;
 `

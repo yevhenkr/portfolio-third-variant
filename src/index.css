@@ -98,6 +98,7 @@ a,button {
   color: inherit;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 /**{*/
 /*    outline: solid 1px red;*/
