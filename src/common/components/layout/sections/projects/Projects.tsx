@@ -2,9 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../ui/flexWrapper/FlexWrapper";
 import imgProject from "../../../../../assets/img/ProjecView.jpg";
-import {CalendarIcon} from "../../../../../assets/icons/calendarIcon";
 import {LinkIcon} from "../../../../../assets/icons/linkIcon";
-import {GitIcon} from "../../../../../assets/icons/gitIcon";
 import {GitHubIcon} from "../../../../../assets/icons/gitHubIcon";
 import {myProjects, myTheme} from "../../../../../styles/Theme.styled";
 

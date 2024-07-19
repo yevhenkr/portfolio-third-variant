@@ -5,7 +5,7 @@ import {HouseIcon} from "../../../../../assets/icons/houseIcon";
 import {LocationIcon} from "../../../../../assets/icons/locationIcon";
 import {CalendarIcon} from "../../../../../assets/icons/calendarIcon";
 import {TitleStyled} from "../about/About";
-import {myTheme} from "../../../../../styles/Theme.styled";
+import {myExperience, myProjects, myTheme} from "../../../../../styles/Theme.styled";
 import {Button} from "../../../ui/button/Button";
 
 export const Experiens = () => {
@@ -14,43 +14,47 @@ export const Experiens = () => {
             <TitleStyled>Work Experience</TitleStyled>
             <FlexWrapper display={"flex"} flexDirection={"column"} margin={" 0 0 200px 0"}>
 
-                <WorkWrap >
-                    <FlexWrapper display={"flex"} flexDirection={"row"} justify={"space-between"}>
-                        <Positions>Junior Web Developer</Positions>
-                        <Button title={"Full time"}/>
-                    </FlexWrapper>
-
-                    <FlexWrapper display={"flex"} flexDirection={"row"} padding={"0 0 0 2px"}>
-                        <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"} padding={" 0 68px 0 0"}>
-                            <HouseIcon/>
-                            <StyledText>Dr. Rajkumar’s Learning App</StyledText>
+                {myExperience.map((work, index) => (
+                    <WorkWrap key={index} index={index}>
+                        <FlexWrapper display={"flex"} flexDirection={"row"}
+                                     justify={"space-between"}>
+                            <Positions>{work.position}</Positions>
+                            <Button title={work.time}/>
                         </FlexWrapper>
-                        <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"}>
-                            <LocationIcon/>
-                            <StyledText>Bengaluru</StyledText>
-                        </FlexWrapper>
-
-                        <CalendarWrap >
-                            <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"} >
-                                <CalendarIcon/>
-                                <StyledText>Sep 2021 - Dec 2021</StyledText>
+                        <FlexWrapper display={"flex"} flexDirection={"row"} padding={"0 0 0 2px"}>
+                            <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"}
+                                         padding={" 0 68px 0 0"}>
+                                <HouseIcon/>
+                                <StyledText>{work.product}</StyledText>
                             </FlexWrapper>
-                        </CalendarWrap>
+                            <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"}>
+                                <LocationIcon/>
+                                <StyledText>{work.location}</StyledText>
+                            </FlexWrapper>
+                            <CalendarWrap>
+                                <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"}>
+                                    <CalendarIcon/>
+                                    <StyledText>{work.timePeriod}</StyledText>
+                                </FlexWrapper>
+                            </CalendarWrap>
+                        </FlexWrapper></WorkWrap>))}
 
-                    </FlexWrapper>
-                </WorkWrap>
 
             </FlexWrapper>
         </>
     );
 };
-
-const WorkWrap = styled(FlexWrapper)`
+interface WorkWrapProps {
+    index: number;
+}
+const WorkWrap = styled(FlexWrapper)<WorkWrapProps>`
     display: flex;
     flex-direction: column;
     padding-bottom: 24px;
     position: relative;
-    &::before{
+    padding-top: ${({index}) => (index === 1 || index === 2) ? "30px" : ''};
+
+    &::before {
         content: "";
         position: absolute;
         width: 100%;

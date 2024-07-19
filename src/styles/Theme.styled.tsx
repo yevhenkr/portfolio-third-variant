@@ -72,5 +72,29 @@ export const myProjects = [
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStackDetails: "HTML , JavaScript, SASS, React",
     }
+]
+
+export const myExperience = [
+    {
+        position: "Junior Web Developer",
+        product: "Dr. Rajkumar’s Learning App",
+        location: "Bengaluru",
+        time: "Full Time",
+        timePeriod: "Sep 2021 - Dec 2021",
+    },
+    {
+        position: "Web Development Intern",
+        product: "IonPixelz Web Solutions",
+        location: "Bengaluru",
+        time: "Internship",
+        timePeriod: "Sep 2022 - Dec 2023",
+    },
+    {
+        position: "SEO / SEM Specialist",
+        product: "HAAPS",
+        location: "Bengaluru",
+        time: "Internship",
+        timePeriod: "Sep 2023 - Dec 2024",
+    }
 
 ]
