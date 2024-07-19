@@ -18,6 +18,8 @@ type FlexWrapperType = {
   padding?: string
   boxShadow?: string
   backgroundColor?: string
+  overflow?: string
+  clip_path?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperType>`
@@ -27,7 +29,7 @@ export const FlexWrapper = styled.div<FlexWrapperType>`
     align-items: ${props => props.align_i || 'stretch'};
     flex-wrap: ${props => props.wrap || 'nowrap'};
     flex: ${props => props.flex || ''};
-    gap: ${props => props.gap || '10px'};
+    gap: ${props => props.gap || ''};
     min-width: ${props => props.min_width || 'auto'};
     max-width: ${props => props.max_width || 'auto'};
     width: ${props => props.width || 'auto'};
@@ -37,4 +39,6 @@ export const FlexWrapper = styled.div<FlexWrapperType>`
     padding: ${props => props.padding || "0"};
     box-shadow: ${props => props.boxShadow || ""};
     background-color: ${props => props.backgroundColor || ""};
+    overflow: ${props => props.overflow || ""};
+    clip-path: ${props => props.clip_path || ""};
 `

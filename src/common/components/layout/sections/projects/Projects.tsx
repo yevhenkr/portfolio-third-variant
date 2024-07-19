@@ -15,34 +15,64 @@ export const Projects = () => {
         <ProjectsSection>
             <TitleSection wordOne={"Projects"}/>
             <SubTitle>Things I’ve built so far</SubTitle>
-            <FlexWrapper display={"flex"} wrap={"wrap"}>
-            {myProjects.map(proj => (
-                <FlexWrapper max_width={"375px"} width={"100%"}>
-                    <ImgStiled src={imgProject} alt={"Project image"}/>
-                    <FlexWrapper padding={"0 10px"} width={"100%"}>
-                        <FlexWrapper>
-                            <NameProject>{proj.name}</NameProject>
-                            <Description>{proj.description}</Description>
-                            <FlexWrapper display={"flex"} flexDirection={"row"} width={"100%"}>
-                                <TechStack>Tech stack :</TechStack>
-                                <span>{proj.name}</span>
+            <ProjectsGrid>
+                {myProjects.map(proj => (
+                    <FlexWrapper overflow={"hidden"} boxShadow={"10px 10px 15px 5px rgba(0, 0, 0, 0.3)"}
+                                 max_width={"375px"} width={"100%"} border={"solid 1px red"} borderRadius={"20px"}>
+                        <ImgStiled src={imgProject} alt={"Project image"}/>
+                        <CardTextPart>
+                            <FlexWrapper>
+                                <NameProject>{proj.name}</NameProject>
+                                <Description>{proj.description}</Description>
+                                <FlexWrapper display={"flex"} flexDirection={"row"} width={"100%"}
+                                             padding={"0 0 20px 0"}>
+                                    <TechStack>Tech stack :</TechStack>
+                                    <TechDescriptions>{proj.techStackDetails}</TechDescriptions>
+                                </FlexWrapper>
                             </FlexWrapper>
-                        </FlexWrapper>
-                        <FlexWrapper display={"flex"} flexDirection={"row"} justify={"space-between"}>
-                            <FlexWrapper><LinkIcon/> <a>Live Preview</a></FlexWrapper>
-                            <FlexWrapper><GitHubIcon/> <a> View Code</a></FlexWrapper>
-                        </FlexWrapper>
-                    </FlexWrapper>
-                </FlexWrapper>))}
-            </FlexWrapper>
+                            <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"space-between"}
+                                         justify={"space-between"} width={"100%"} max_width={"314px"}
+                                         padding={"0 0 28px 0"}>
+                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}><LinkIcon/> <a>Live
+                                    Preview</a></FlexWrapper>
+                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}><GitHubIcon/> <a> View
+                                    Code</a></FlexWrapper>
+                            </FlexWrapper>
+                        </CardTextPart>
+                    </FlexWrapper>))}
+            </ProjectsGrid>
         </ProjectsSection>
     );
 };
 
-const ProjectsGrid = styled.div`
+const ProjectsGrid = styled(FlexWrapper)`
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    column-gap: 34px;
+    row-gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+`
+const GridItem = styled(FlexWrapper)`
+    display: flex;
+    max-width: 375px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
+
+`
+
+
+const CardTextPart = styled(FlexWrapper)`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: auto;
+    max-width: 314px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 `
 const ProjectsSection = styled.section`
     display: flex;
@@ -51,8 +81,25 @@ const ProjectsSection = styled.section`
     margin: 0 200px;`
 
 const SubTitle = styled.h3``
-const NameProject = styled.h4``
-const Description = styled.p``
+const NameProject = styled.h4`
+    font-size: 28px;
+    font-weight: 500;
+`
+const Description = styled.p`
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 12px;
+`
 const TechStack = styled.span`
-    font-weight: bold`
-const ImgStiled = styled.img``
+    font-size: 16px;
+    color: ${myTheme.color.title};
+    font-weight: 400`
+
+const TechDescriptions = styled.span`
+    font-size: 14px;
+    color: ${myTheme.color.title};
+    font-weight: 300;
+`
+
+const ImgStiled = styled.img`
+    padding-bottom: 22px`
