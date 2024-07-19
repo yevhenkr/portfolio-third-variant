@@ -37,6 +37,7 @@ export const mySections = [
     ['#About', 'About'],
     ['#Tech Stack', 'Tech Stack'],
     ['#Projects', 'Projects'],
+    ['#Mail me', 'Mail me'],
     ['#Contact', 'Contact'],
 ]
 
@@ -98,3 +99,5 @@ export const myExperience = [
     }
 
 ]
+
+export let heightMenu = {large:100}

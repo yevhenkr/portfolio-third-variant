@@ -14,9 +14,10 @@ import {GitBigIcon} from "../../../../../assets/icons/gitBigIcon";
 import {MenIcon} from "../../../../../assets/icons/menIcon";
 
 export const TechStack = () => {
-    const icons = [<HTMLIcon />, <CSSIcon />, <JSIcon />, <ReactIcon />, <ReduxIcon />, <SASSIcon />, <GitIcon />, <VscodeIcon />, <GitBigIcon />, <MenIcon />];
+    const icons = [<HTMLIcon/>, <CSSIcon/>, <JSIcon/>, <ReactIcon/>, <ReduxIcon/>, <SASSIcon/>, <GitIcon/>,
+        <VscodeIcon/>, <GitBigIcon/>, <MenIcon/>];
     return (
-        <TechSection>
+        <TechSection id={'Tech Stack'}>
             <Title>My Tech Stack</Title>
             <SubTitle> Technologies I’ve been working with recently</SubTitle>
             <SVGGrid icons={icons}/>

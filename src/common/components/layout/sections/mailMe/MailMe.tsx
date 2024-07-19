@@ -4,7 +4,7 @@ import {myTheme} from "../../../../../styles/Theme.styled";
 
 export const MailMe = () => {
     return (
-        <MailMeSection>
+        <MailMeSection id={'Mail me'}>
             <MailMeText>For any questions please mail me:</MailMeText>
             <MailLink>hi@pavanmg.in</MailLink>
         </MailMeSection>

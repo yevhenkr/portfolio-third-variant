@@ -7,7 +7,7 @@ import {AbstractSVG} from "../../../../../assets/icons/abstractIcon";
 
 export const About = () => {
     return (
-        <AboutSection>
+        <AboutSection id={'About'}>
             <LeftSide>
                 <TitleStyled>About Me</TitleStyled>
                 <AboutText>The Generator App is an online tool that helps you to export ready-made templates ready to

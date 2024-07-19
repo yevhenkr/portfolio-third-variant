@@ -1,24 +1,24 @@
 import styled from "styled-components";
 import React from 'react';
-import {mySections, myTheme} from "../../../../../styles/Theme.styled";
+import {heightMenu, mySections, myTheme} from "../../../../../styles/Theme.styled";
 
 type PropsType = {
     className?: string;
     closeMobileMenu?: () => void;
-    height?: number
+    height: number
 };
 
 export const HeaderMenu = (props: PropsType) => {
     const handleClick = (id: string) => {
-        // const element = document.getElementById(id);
-        // if (element) {
-        //     const offset = props.height; // Указать необходимое смещение
-        //     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-        //     window.scrollTo({
-        //         top: (elementPosition - offset),
-        //         behavior: "smooth"
-        //     });
-        // }
+        const element = document.getElementById(id);
+        if (element) {
+            const offset = props.height;
+            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: (elementPosition - heightMenu.large),
+                behavior: "smooth"
+            });
+        }
         // if (props.closeMobileMenu) {
         //     props.closeMobileMenu();
         // }

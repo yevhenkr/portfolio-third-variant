@@ -4,10 +4,11 @@ import {FlexWrapper} from "../../ui/flexWrapper/FlexWrapper";
 import {LogoBlackIcon} from "../../../../assets/icons/logoBlackIcon";
 import SocialMediaIcons from "./footerSocialMedia/socialMediaIcons";
 import {HeaderMenu} from "../header/headerMenu/HeaderMenu";
+import {heightMenu} from "../../../../styles/Theme.styled";
 
 export const Footer = () => {
     return (
-        <StyledFooter>
+        <StyledFooter id={'Contact'}>
             <WrapStyled>
                 <LogoBlackIcon/>
                 <FlexWrapper display={"flex"} flexDirection={"row"} width={"50%"} align_i={"center"}>
@@ -17,7 +18,7 @@ export const Footer = () => {
                 </FlexWrapper>
             </WrapStyled>
             <FlexWrapper display={"flex"} flexDirection={"row"} justify={"space-between"}>
-                <StyledHeaderMenu/>
+                <StyledHeaderMenu height={heightMenu.large}/>
                 <SmallStyled>
                     Designed and built by
                     <Highlight1>&nbsp;Pavan MG&nbsp;</Highlight1>

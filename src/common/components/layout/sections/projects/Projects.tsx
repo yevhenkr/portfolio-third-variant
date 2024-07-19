@@ -9,7 +9,7 @@ import {myProjects, myTheme} from "../../../../../styles/Theme.styled";
 
 export const Projects = () => {
     return (
-        <ProjectsSection>
+        <ProjectsSection id={'Projects'}>
             <Title>Projects</Title>
             <SubTitle>Things I’ve built so far</SubTitle>
             <ProjectsGrid>
