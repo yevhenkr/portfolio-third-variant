@@ -2,20 +2,31 @@ import React from 'react';
 import styled from "styled-components";
 import {Experience} from "../experiens/Experience";
 import {myTheme} from "../../../../../styles/Theme.styled";
+import {Education} from "../education/Education";
+import {AbstractSVG} from "../../../../../assets/icons/abstractIcon";
 
 export const About = () => {
     return (
         <AboutSection>
-            <TitleStyled>About Me</TitleStyled>
-            <AboutText>The Generator App is an online tool that helps you to export ready-made templates ready to work
-                as your future website. It helps you to combine slides, panels and other components and export it as a
-                set of static files: HTML/CSS/JS.</AboutText>
-            <Experience/>
-            {/*<Education/>*/}
-            {/*    TODO*/}
+            <LeftSide>
+                <TitleStyled>About Me</TitleStyled>
+                <AboutText>The Generator App is an online tool that helps you to export ready-made templates ready to
+                    work as your future website. It helps you to combine slides, panels and other components and export it as
+                    a set of static files: HTML/CSS/JS.</AboutText>
+                <Experience/>
+                <Education/>
+            </LeftSide>
+            <AbstractImg><AbstractSVG/></AbstractImg>
         </AboutSection>
     );
 };
+
+const LeftSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    justify-content: flex-start;
+`
 
 export const TitleStyled = styled.h2`
     margin-bottom: 38px;
@@ -25,10 +36,17 @@ export const TitleStyled = styled.h2`
 `
 
 const AboutSection = styled.section`
+    position: relative;
     display: flex;
-    flex-direction: column;
-    max-width: 710px;
-    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 200px;
+`
+
+const AbstractImg = styled.div`
+    position: absolute;
+    right: 0;
+    top: -140px;
+    max-width: 834px;
 `
 
 const AboutText = styled.p`

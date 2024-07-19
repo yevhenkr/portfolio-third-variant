@@ -12,7 +12,7 @@ export const Experience = () => {
     return (
         <>
             <TitleStyled>Work Experience</TitleStyled>
-            <FlexWrapper display={"flex"} flexDirection={"column"} margin={" 0 0 200px 0"}>
+            <FlexWrapper display={"flex"} flexDirection={"column"} margin={" 0 0 38px 0"}>
 
                 {myExperience.map((work, index) => (
                     <WorkWrap key={index} index={index}>
@@ -47,7 +47,7 @@ export const Experience = () => {
 interface WorkWrapProps {
     index: number;
 }
-const WorkWrap = styled(FlexWrapper)<WorkWrapProps>`
+export const WorkWrap = styled(FlexWrapper)<WorkWrapProps>`
     display: flex;
     flex-direction: column;
     padding-bottom: 24px;
@@ -65,20 +65,20 @@ const WorkWrap = styled(FlexWrapper)<WorkWrapProps>`
     }
 `
 
-const CalendarWrap = styled.div`
+export const CalendarWrap = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     margin-left: auto;
 `
 
-const Positions = styled.h3`
+export const Positions = styled.h3`
     font-weight: 400;
     font-size: 20px;
     color: ${myTheme.color.text};
     padding-bottom: 2px;
 `
-const StyledText = styled.span`
+export const StyledText = styled.span`
     font-family: Poppins, sans-serif;
     padding-left: 8px;
     font-weight: 500;
