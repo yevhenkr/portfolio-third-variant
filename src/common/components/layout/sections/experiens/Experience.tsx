@@ -73,7 +73,6 @@ const CalendarWrap = styled.div`
 `
 
 const Positions = styled.h3`
-    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: ${myTheme.color.text};
@@ -81,6 +80,7 @@ const Positions = styled.h3`
 `
 const StyledText = styled.span`
     font-family: Poppins, sans-serif;
+    padding-left: 8px;
     font-weight: 500;
     font-size: 12px;
     color: ${myTheme.color.text};
