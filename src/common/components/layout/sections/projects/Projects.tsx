@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../ui/flexWrapper/FlexWrapper";
 import imgProject from "../../../../../assets/img/ProjecView.jpg";
+import img from "../../../../../assets/img/CardsProj.jpg";
 import {LinkIcon} from "../../../../../assets/icons/linkIcon";
 import {GitHubIcon} from "../../../../../assets/icons/gitHubIcon";
 import {myProjects, myTheme} from "../../../../../styles/Theme.styled";
@@ -16,7 +17,7 @@ export const Projects = () => {
                 {myProjects.map(proj => (
                     <FlexWrapper overflow={"hidden"} boxShadow={"10px 10px 15px 5px rgba(0, 0, 0, 0.3)"}
                                  min_width={"365px"} width={"100%"} borderRadius={"20px"}>
-                        <ImgStiled src={imgProject} alt={"Project image"}/>
+                        <ImgStiled src={proj.img} alt={"Project image"}/>
                         <CardTextPart>
                             <FlexWrapper>
                                 <NameProject>{proj.name}</NameProject>
@@ -30,10 +31,13 @@ export const Projects = () => {
                             <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"space-between"}
                                          justify={"space-between"} width={"100%"} max_width={"314px"}
                                          padding={"0 0 28px 0"}>
-                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}><LinkIcon/> <a>Live
-                                    Preview</a></FlexWrapper>
-                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}><GitHubIcon/> <a> View
-                                    Code</a></FlexWrapper>
+                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}><LinkIcon/>
+                                    <LinkStyled href={proj.previewLink}>Live
+                                        Preview</LinkStyled></FlexWrapper>
+                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}>
+                                    <GitHubIcon/>
+                                    <LinkStyled href={proj.codeLink}> View Code</LinkStyled>
+                                </FlexWrapper>
                             </FlexWrapper>
                         </CardTextPart>
                     </FlexWrapper>))}
@@ -57,7 +61,6 @@ const GridItem = styled(FlexWrapper)`
     border: 1px solid black;
 
 `
-
 
 const CardTextPart = styled(FlexWrapper)`
     display: flex;
@@ -114,4 +117,15 @@ const TechDescriptions = styled.span`
 `
 
 const ImgStiled = styled.img`
-    padding-bottom: 22px`
+    padding-bottom: 22px;
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    height: auto;
+    object-fit: contain;
+`
+
+const LinkStyled = styled.a`
+    &:hover{
+        color: blue;
+    }
+`
+

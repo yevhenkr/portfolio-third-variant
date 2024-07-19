@@ -1,3 +1,8 @@
+import imgProject from "../assets/img/CardsProj.jpg";
+import portfolioProject from "../assets/img/PortfolioProj.png";
+import sFoodProject from "../assets/img/SFoodProj.png";
+
+
 export const myTheme = {
     color: {
         black: '#07253C',
@@ -47,31 +52,49 @@ export const myProjects = [
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStack: "Tech stack :",
         techStackDetails: "HTML , JavaScript, SASS, React",
+        img: imgProject,
+        previewLink: "https://cards-for-study.vercel.app/login",
+        codeLink: "https://github.com/MrEvgeniy1989/cards",
     },
     {
         name: "Project Tile goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStackDetails: "HTML , JavaScript, SASS, React",
+        img: portfolioProject,
+        previewLink: "https://vasilenko-evgen-xd8s.vercel.app/",
+        codeLink: "https://github.com/yevhenkr/vasilenkoEvgen",
     },
     {
         name: "Project Tile goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStackDetails: "HTML , JavaScript, SASS, React",
+        img: sFoodProject,
+        previewLink: "https://simpel-food.vercel.app/",
+        codeLink: "https://github.com/yevhenkr/simpel_food",
     },
     {
         name: "Project Tile goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStackDetails: "HTML , JavaScript, SASS, React",
+        img: imgProject,
+        previewLink: "https://cards-for-study.vercel.app/login",
+        codeLink: "https://github.com/MrEvgeniy1989/cards",
     },
     {
         name: "Project Tile goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStackDetails: "HTML , JavaScript, SASS, React",
+        img: portfolioProject,
+        previewLink: "https://vasilenko-evgen-xd8s.vercel.app/",
+        codeLink: "https://github.com/yevhenkr/vasilenkoEvgen",
     },
     {
         name: "Project Tile goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
         techStackDetails: "HTML , JavaScript, SASS, React",
+        img: sFoodProject,
+        previewLink: "https://simpel-food.vercel.app/",
+        codeLink: "https://github.com/yevhenkr/simpel_food",
     }
 ]
 
