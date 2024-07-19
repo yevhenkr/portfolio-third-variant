@@ -16,6 +16,7 @@ export const About = () => {
                 <Experience/>
                 <Education/>
             </LeftSide>
+            <AbstractImg><AbstractSVG/></AbstractImg>
         </AboutSection>
     );
 };
@@ -47,4 +48,11 @@ const AboutText = styled.p`
     display: flex;
     flex-direction: column;
     margin-bottom: 38px;
+`
+
+
+const AbstractImg = styled.div`
+    position: absolute;
+    max-width: 834px;
+    right: -230px;
 `

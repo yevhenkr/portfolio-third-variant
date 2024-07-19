@@ -15,7 +15,6 @@ function App() {
         <AppWrapper>
             <Header/>
             <Main/>
-            <AbstractImg><AbstractSVG/></AbstractImg>
             <About/>
             <TechStack/>
             <Projects/>
@@ -33,9 +32,4 @@ const AppWrapper = styled.div`
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-`
-
-const AbstractImg = styled.div`
-    position: absolute;
-    max-width: 834px;
 `
