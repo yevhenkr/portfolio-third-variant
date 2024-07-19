@@ -85,8 +85,3 @@ const StyledText = styled.span`
     font-size: 12px;
     color: ${myTheme.color.text};
 `
-const ExperiensSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    margin: 0 200px;
-`
