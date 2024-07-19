@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {myTheme} from "../../../../../styles/Theme.styled";
 
 export const MailMe = () => {
     return (
@@ -13,7 +14,22 @@ export const MailMe = () => {
 const MailMeSection = styled.section`
     display: flex;
     flex-direction: column;
-    margin: 0 200px;
+    align-items: center;
+    font-size: 58px;
+    font-family: DMSans,sans-serif;
+    font-weight: bold;
+    margin-bottom: 200px;
 `
-const MailMeText = styled.h2``
-const MailLink = styled.a``
+const MailMeText = styled.h2`
+color: ${myTheme.color.mailTitle};
+    font-size: 58px;
+    font-family: DMSans,sans-serif;
+    font-weight: bold;
+`
+const MailLink = styled.a`
+    background: linear-gradient(to left, #E70FAA, #13B0F5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+`

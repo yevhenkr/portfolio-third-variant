@@ -30,7 +30,12 @@ const StyledMain = styled.main`
     font-size: 40px;
 `
 const StyledH1 = styled.h1`
-    color: ${myTheme.color.title}
+    font-weight: 500;
+    background: linear-gradient(to right, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 `
 const StyledH2 = styled.h2`
     color: ${myTheme.color.title}
