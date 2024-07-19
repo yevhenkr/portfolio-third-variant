@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../ui/flexWrapper/FlexWrapper";
-import userPhoto from "../../../../assets/img/userPhoto.jpg";
-import Abstract from "../../../../assets/img/userPhoto.jpg";
+import userPhoto from "../../../../assets/img/userPhoto.png";
+import Abstract from "../../../../assets/img/abstract.png";
 import {myTheme} from "../../../../styles/Theme.styled";
 
 export const Main = () => {
