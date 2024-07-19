@@ -6,7 +6,7 @@ type ButtonType ={
     title: string
 }
 
-export const Button = (props: ButtonType) => {
+export const TimeWork = (props: ButtonType) => {
     return (
         <ButtonStyled>
             {props.title? props.title : ""}
@@ -14,7 +14,7 @@ export const Button = (props: ButtonType) => {
     );
 };
 
-const ButtonStyled = styled.button`
+const ButtonStyled = styled.div`
     background-color: ${myTheme.color.buttonBG};
     color: ${myTheme.color.buttonText};
     border-radius: 100px;

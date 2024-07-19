@@ -6,7 +6,7 @@ import {LocationIcon} from "../../../../../assets/icons/locationIcon";
 import {CalendarIcon} from "../../../../../assets/icons/calendarIcon";
 import {TitleStyled} from "../about/About";
 import {myExperience, myProjects, myTheme} from "../../../../../styles/Theme.styled";
-import {Button} from "../../../ui/button/Button";
+import {TimeWork} from "../../../ui/button/TimeWork";
 
 export const Experience = () => {
     return (
@@ -19,7 +19,7 @@ export const Experience = () => {
                         <FlexWrapper display={"flex"} flexDirection={"row"}
                                      justify={"space-between"}>
                             <Positions>{work.position}</Positions>
-                            <Button title={work.time}/>
+                            <TimeWork title={work.time}/>
                         </FlexWrapper>
                         <FlexWrapper display={"flex"} flexDirection={"row"} padding={"0 0 0 2px"}>
                             <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"}
