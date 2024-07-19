@@ -8,7 +8,7 @@ import {TitleStyled} from "../about/About";
 import {myExperience, myProjects, myTheme} from "../../../../../styles/Theme.styled";
 import {Button} from "../../../ui/button/Button";
 
-export const Experiens = () => {
+export const Experience = () => {
     return (
         <>
             <TitleStyled>Work Experience</TitleStyled>

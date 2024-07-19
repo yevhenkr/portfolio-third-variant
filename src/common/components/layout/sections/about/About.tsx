@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {Experiens} from "../experiens/Experiens";
+import {Experience} from "../experiens/Experience";
 import {myTheme} from "../../../../../styles/Theme.styled";
 
 export const About = () => {
@@ -10,7 +10,7 @@ export const About = () => {
             <AboutText>The Generator App is an online tool that helps you to export ready-made templates ready to work
                 as your future website. It helps you to combine slides, panels and other components and export it as a
                 set of static files: HTML/CSS/JS.</AboutText>
-            <Experiens/>
+            <Experience/>
             {/*<Education/>*/}
             {/*    TODO*/}
         </AboutSection>
