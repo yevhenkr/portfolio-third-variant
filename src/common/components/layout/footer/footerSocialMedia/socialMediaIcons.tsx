@@ -5,7 +5,7 @@ const SocialMediaIcons = () => {
   return (
     <SocialList>
       <SocialItem>
-        <SocialLink href={'https://t.me/VasilenkoEvgen'} rel={'noreferrer'}>
+        <SocialLink href={'https://x.com/?lang=en'} rel={'noreferrer'}>
           <Icon iconId={'x'} viewBox="0 0 31 31" />
         </SocialLink>
       </SocialItem>

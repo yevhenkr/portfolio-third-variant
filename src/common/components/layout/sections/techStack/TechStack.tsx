@@ -12,9 +12,11 @@ import {GitIcon} from "../../../../../assets/icons/gitIcon";
 import {VscodeIcon} from "../../../../../assets/icons/vscodeIcon";
 import {TitleStyled} from "../about/About";
 import {myTheme} from "../../../../../styles/Theme.styled";
+import {GitBigIcon} from "../../../../../assets/icons/gitBigIcon";
+import {MenIcon} from "../../../../../assets/icons/menIcon";
 
 export const TechStack = () => {
-    const icons = [<HTMLIcon />, <CSSIcon />, <JSIcon />, <ReactIcon />, <ReduxIcon />, <SASSIcon />, <GitIcon />, <VscodeIcon />, <VscodeIcon />, <VscodeIcon />];
+    const icons = [<HTMLIcon />, <CSSIcon />, <JSIcon />, <ReactIcon />, <ReduxIcon />, <SASSIcon />, <GitIcon />, <VscodeIcon />, <GitBigIcon />, <MenIcon />];
     return (
         <TechSection>
             <Title>My Tech Stack</Title>

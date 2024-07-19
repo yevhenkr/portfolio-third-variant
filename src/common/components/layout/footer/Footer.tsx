@@ -17,7 +17,7 @@ export const Footer = () => {
                 </FlexWrapper>
             </WrapStyled>
             <FlexWrapper display={"flex"} flexDirection={"row"} justify={"space-between"}>
-                <StyledHeaderMenu className={"margin-bottom: 24px"}></StyledHeaderMenu>
+                <StyledHeaderMenu/>
                 <SmallStyled>
                     Designed and built by
                     <Highlight1>&nbsp;Pavan MG&nbsp;</Highlight1>
