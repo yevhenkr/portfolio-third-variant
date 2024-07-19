@@ -4,6 +4,7 @@ export const myTheme = {
         white: '#fff',
         text: '#666666',
         title: '#42446E',
+        mailTitle: '#1E0E62',
         buttonBG: '#D7FFE0',
         buttonText: '#018C0F',
         bar: '#EBEAED',
