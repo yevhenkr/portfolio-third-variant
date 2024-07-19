@@ -6,6 +6,8 @@ import {TechStack} from "./common/components/layout/sections/techStack/TechStack
 import {Projects} from "./common/components/layout/sections/projects/Projects";
 import {MailMe} from "./common/components/layout/sections/mailMe/MailMe";
 import {Footer} from "./common/components/layout/footer/Footer";
+import {AbstractSVG} from "./assets/icons/abstractIcon";
+import React from "react";
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
         <AppWrapper>
             <Header/>
             <Main/>
+            <AbstractImg><AbstractSVG/></AbstractImg>
             <About/>
             <TechStack/>
             <Projects/>
@@ -30,4 +33,9 @@ const AppWrapper = styled.div`
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+`
+
+const AbstractImg = styled.div`
+    position: absolute;
+    max-width: 834px;
 `

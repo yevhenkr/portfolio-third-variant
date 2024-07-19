@@ -1,17 +1,15 @@
-import {UserSVG} from "../../../../assets/icons/user";
 import styled from "styled-components";
 import {FlexWrapper} from "../../ui/flexWrapper/FlexWrapper";
 import userPhoto from "../../../../assets/img/userPhoto.jpg";
 import Abstract from "../../../../assets/img/userPhoto.jpg";
 import {myTheme} from "../../../../styles/Theme.styled";
 
-const text  = "I’m Vasilenko"
 export const Main = () => {
     return (
         <StyledMain>
             <FlexWrapper display={"flex"} flexDirection={"column"} max_width={"630px"}>
-                <StyledH1>a Front-End</StyledH1>
-                <StyledH2>{text}</StyledH2>
+                <StyledH2>Hi 👋, My name is Evgen I build things for web</StyledH2>
+                <StyledH1>I’m Front-end Dev</StyledH1>
             </FlexWrapper>
             <StyledIcon src={userPhoto} alt={"User photo"}></StyledIcon>
         </StyledMain>
