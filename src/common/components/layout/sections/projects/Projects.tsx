@@ -18,7 +18,7 @@ export const Projects = () => {
             <ProjectsGrid>
                 {myProjects.map(proj => (
                     <FlexWrapper overflow={"hidden"} boxShadow={"10px 10px 15px 5px rgba(0, 0, 0, 0.3)"}
-                                 max_width={"375px"} width={"100%"} border={"solid 1px red"} borderRadius={"20px"}>
+                                 min_width={"365px"} width={"100%"} borderRadius={"20px"}>
                         <ImgStiled src={imgProject} alt={"Project image"}/>
                         <CardTextPart>
                             <FlexWrapper>
