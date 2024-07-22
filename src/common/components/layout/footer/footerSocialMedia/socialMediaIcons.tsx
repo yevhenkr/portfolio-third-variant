@@ -1,12 +1,13 @@
 import { Icon } from '../../../ui/icon/Icon'
 import styled from 'styled-components'
+import {myTheme} from "../../../../../styles/Theme.styled";
 
 const SocialMediaIcons = () => {
   return (
     <SocialList>
       <SocialItem>
         <SocialLink href={'https://x.com/?lang=en'} rel={'noreferrer'}>
-          <Icon iconId={'x'} viewBox="0 0 31 31" />
+          <Icon iconId={'x'} viewBox="0 0 31 31" color={`${myTheme.color.text}`}/>
         </SocialLink>
       </SocialItem>
 
@@ -15,13 +16,13 @@ const SocialMediaIcons = () => {
           href={'https://www.linkedin.com/in/yevhen-vasilenko-0a2171161/'}
           rel={'noreferrer'}
         >
-          <Icon iconId={'linkedIn'} />
+          <Icon iconId={'linkedIn'}  color={`${myTheme.color.text}`}/>
         </SocialLink>
       </SocialItem>
 
       <SocialItem>
         <SocialLink href={'https://github.com/yevhenkr'} rel={'noreferrer'}>
-          <Icon iconId={'gitHub'} viewBox="0 0 31 31"/>{' '}
+          <Icon iconId={'gitHub'} viewBox="0 0 31 31"  color={`${myTheme.color.text}`}/>{' '}
         </SocialLink>
       </SocialItem>
     </SocialList>

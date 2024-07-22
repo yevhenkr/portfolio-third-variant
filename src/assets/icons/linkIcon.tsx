@@ -10,7 +10,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
         {...props}
     >
         <g
-            stroke="#000"
+            stroke={props.stroke}
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.667}

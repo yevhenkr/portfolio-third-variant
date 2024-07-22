@@ -14,8 +14,8 @@ import {GitBigIcon} from "../../../../../assets/icons/gitBigIcon";
 import {MenIcon} from "../../../../../assets/icons/menIcon";
 
 export const TechStack = () => {
-    const icons = [<HTMLIcon/>, <CSSIcon/>, <JSIcon/>, <ReactIcon/>, <ReduxIcon/>, <SASSIcon/>, <GitIcon/>,
-        <VscodeIcon/>, <GitBigIcon/>, <MenIcon/>];
+    const icons = [<HTMLIcon/>, <CSSIcon/>, <JSIcon/>, <ReactIcon/>, <ReduxIcon/>, <SASSIcon/>, <GitIcon />,
+        <VscodeIcon/>, <GitBigIcon stroke={`${myTheme.color.blackWhite}`}/>, <MenIcon stroke={`${myTheme.color.blackWhite}`}/>];
     return (
         <TechSection id={'Tech Stack'}>
             <Title>My Tech Stack</Title>

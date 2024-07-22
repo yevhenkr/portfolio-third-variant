@@ -4,7 +4,7 @@ import {FlexWrapper} from "../../ui/flexWrapper/FlexWrapper";
 import {LogoBlackIcon} from "../../../../assets/icons/logoBlackIcon";
 import SocialMediaIcons from "./footerSocialMedia/socialMediaIcons";
 import {HeaderMenu} from "../header/headerMenu/HeaderMenu";
-import {heightMenu} from "../../../../styles/Theme.styled";
+import {heightMenu, myTheme} from "../../../../styles/Theme.styled";
 
 export const Footer = () => {
     return (
@@ -40,6 +40,7 @@ const StyledFooter = styled.footer`
 `
 
 const SmallStyled = styled.small`
+    color: ${myTheme.color.text};
     display: flex;
     align-items: center;
 `
@@ -53,6 +54,7 @@ const WrapStyled = styled.div`
 `
 
 const SpanStyled = styled.span`
+    color: ${myTheme.color.text};
     width: 100%;`
 
 const Logo = styled.img`

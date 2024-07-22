@@ -45,6 +45,7 @@ const AboutSection = styled.section`
 
 
 const AboutText = styled.p`
+    color: ${myTheme.color.text};
     display: flex;
     flex-direction: column;
     margin-bottom: 38px;

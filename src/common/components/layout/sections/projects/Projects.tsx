@@ -15,7 +15,7 @@ export const Projects = () => {
             <SubTitle>Things I’ve built so far</SubTitle>
             <ProjectsGrid>
                 {myProjects.map(proj => (
-                    <FlexWrapper overflow={"hidden"} boxShadow={"10px 10px 15px 5px rgba(0, 0, 0, 0.3)"}
+                    <FlexWrapper overflow={"hidden"} boxShadow={"10px 10px 15px 5px rgba(0, 0, 0, 0.3)"}  backgroundColor={`${myTheme.color.cardBG}`}
                                  min_width={"365px"} width={"100%"} borderRadius={"20px"}>
                         <ImgStiled src={proj.img} alt={"Project image"}/>
                         <CardTextPart>
@@ -31,9 +31,11 @@ export const Projects = () => {
                             <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"space-between"}
                                          justify={"space-between"} width={"100%"} max_width={"314px"}
                                          padding={"0 0 28px 0"}>
-                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}><LinkIcon/>
+                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}>
+                                    <LinkIcon stroke={`${myTheme.color.title}`}/>
                                     <LinkStyled href={proj.previewLink}>Live
-                                        Preview</LinkStyled></FlexWrapper>
+                                        Preview</LinkStyled>
+                                </FlexWrapper>
                                 <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}>
                                     <GitHubIcon/>
                                     <LinkStyled href={proj.codeLink}> View Code</LinkStyled>
@@ -73,6 +75,7 @@ const CardTextPart = styled(FlexWrapper)`
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    color: ${myTheme.color.cardText};
 `
 const ProjectsSection = styled.section`
     display: flex;
@@ -97,6 +100,7 @@ const SubTitle = styled.h3`
 `
 
 const NameProject = styled.h4`
+    color: ${myTheme.color.cardTitle};
     font-size: 28px;
     font-weight: 500;
 `
@@ -124,6 +128,7 @@ const ImgStiled = styled.img`
 `
 
 const LinkStyled = styled.a`
+    color: ${myTheme.color.blackWhite};
     &:hover{
         color: blue;
     }

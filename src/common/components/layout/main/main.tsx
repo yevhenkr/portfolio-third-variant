@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../ui/flexWrapper/FlexWrapper";
 import userPhoto from "../../../../assets/img/userPhoto.png";
 import Abstract from "../../../../assets/img/abstract.png";
 import {myTheme} from "../../../../styles/Theme.styled";
+import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
     return (
@@ -11,7 +12,9 @@ export const Main = () => {
                 <StyledH2>Hi 👋, My name is Evgen I build things for web</StyledH2>
                 <StyledH1>I’m Front-end Dev</StyledH1>
             </FlexWrapper>
-            <StyledIcon src={userPhoto} alt={"User photo"}></StyledIcon>
+            <Tilt>
+                <StyledIcon src={userPhoto} alt={"User photo"}></StyledIcon>
+            </Tilt>
         </StyledMain>
     );
 };
@@ -42,7 +45,8 @@ const StyledIcon = styled.img`
     max-width: 350px;
     width: 100%;
     position: relative;
-object-fit: contain;
+    object-fit: contain;
+
     &::after {
         content: "";
         position: absolute;

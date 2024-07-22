@@ -36,7 +36,7 @@ const HeaderWrap = styled(FlexWrapper)`
     max-width: 1200px;
     width: 100%;
     padding-top: 40px;
-    background-color: ${myTheme.color.white};
+    background-color: ${myTheme.color.backGround};
     z-index: 2;
 `;
 

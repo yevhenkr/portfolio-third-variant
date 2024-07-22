@@ -21,7 +21,7 @@ const MailMeSection = styled.section`
     margin-bottom: 200px;
 `
 const MailMeText = styled.h2`
-color: ${myTheme.color.mailTitle};
+color: ${myTheme.color.title};
     font-size: 58px;
     font-family: DMSans,sans-serif;
     font-weight: bold;

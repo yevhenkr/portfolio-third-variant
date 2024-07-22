@@ -1,19 +1,108 @@
 import imgProject from "../assets/img/CardsProj.jpg";
 import portfolioProject from "../assets/img/PortfolioProj.png";
 import sFoodProject from "../assets/img/SFoodProj.png";
+import { createGlobalStyle } from 'styled-components';
 
 
+const GlobalStyles = createGlobalStyle`
+    :root[data-theme='dark'] {
+        --color-BG: #191919;
+        --color-text: #A7A7A7;
+        --color-title: #ccc;
+        --color-cardBG: #363636;
+        --color-card-title: #ccc;
+        --color-card-text: #ccc;
+        --color-proj-link: #fff;
+        --color-black-white: #fff;
+        --color-button-theme: #666666;
+        
+        
+        --color-black: #07253C;
+        --color-mailTitle: #1E0E62;
+        --color-buttonBG: #D7FFE0;
+        --color-buttonText: #018C0F;
+        --color-bar: #EBEAED;
+    }
+
+    :root[data-theme='light'] {
+        --color-BG: #fff;
+        --color-text: #666666;
+        --color-title: #42446E;
+        --color-cardBG: #fff;
+        --color-card-title: #000;
+        --color-card-text: #666666;
+        --color-buttonBG: #D7FFE0;
+        --color-buttonText: #018C0F;
+        --color-proj-link: #000;
+        --color-black-white: #000;
+        --color-button-theme:  #666666;
+        
+        
+        
+        --color-black: #fff;
+    }
+`;
+
+export interface ThemeColor {
+    backGround: string;
+    title: string;
+    text: string;
+    black: string;
+    white: string;
+    mailTitle: string;
+    buttonBG: string;
+    buttonText: string;
+    bar: string;
+}
+
+export interface ThemeFont {
+    weights: {
+        regular: number;
+        medium: number;
+        semiBold: number;
+        bold: number;
+    };
+}
+
+export interface ThemeMedia {
+    phone: string;
+    tablet: string;
+}
+
+export interface ThemeScreen {
+    extraLarge: string;
+    large: string;
+    medium: string;
+    small: string;
+}
+
+export interface Theme {
+    color: ThemeColor;
+    media: ThemeMedia;
+    font: ThemeFont;
+    screen: ThemeScreen;
+    headerHeight: string;
+}
+
+let ThemeColor;
 export const myTheme = {
-    color: {
-        black: '#07253C',
-        white: '#fff',
-        text: '#666666',
-        title: '#42446E',
-        mailTitle: '#1E0E62',
-        buttonBG: '#D7FFE0',
-        buttonText: '#018C0F',
-        bar: '#EBEAED',
+    color:ThemeColor= {
+        backGround: 'var(--color-BG)',
+        title: 'var(--color-title)',
+        text: 'var(--color-text)',
+        cardBG: 'var(--color-cardBG)',
+        cardTitle: 'var(--color-card-title)',
+        cardText: 'var(--color-card-text)',
+        projLink: 'var(--color-proj-link)',
+        blackWhite: 'var(--color-black-white)',
+        buttonTheme: 'var(--color-button-theme)',
 
+        black: 'var(--color-black)',
+        white: 'var(--color-white)',
+        mailTitle: 'var(--color-mailTitle)',
+        buttonBG: 'var(--color-buttonBG)',
+        buttonText: 'var(--color-buttonText)',
+        bar: 'var(--color-bar)',
     },
 
     media: {
@@ -124,3 +213,5 @@ export const myExperience = [
 ]
 
 export let heightMenu = {large:100}
+
+export default GlobalStyles;

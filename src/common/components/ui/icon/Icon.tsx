@@ -6,14 +6,16 @@ type PropsType = {
   iconId2?: string
   viewBox?: string
   weight?: string
+  color?: string
 }
 export const Icon = (props: PropsType) => {
   return (
     <svg
-      fill={'none'}
+      fill={'black'}
       height={props.height || '30'}
       viewBox={props.viewBox || '0 0 30 30'}
       width={props.weight || '30'}
+      color={props.color || ""}
     >
       <use xlinkHref={`${iconsSprite}#${props.iconId}`} />
       {props.iconId2 ? <use xlinkHref={`${iconsSprite}#${props.iconId2}`} /> : ''}

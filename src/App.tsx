@@ -6,7 +6,6 @@ import {TechStack} from "./common/components/layout/sections/techStack/TechStack
 import {Projects} from "./common/components/layout/sections/projects/Projects";
 import {MailMe} from "./common/components/layout/sections/mailMe/MailMe";
 import {Footer} from "./common/components/layout/footer/Footer";
-import {AbstractSVG} from "./assets/icons/abstractIcon";
 import React from "react";
 
 
