@@ -3,21 +3,21 @@ import {Main} from "./common/components/layout/main/main";
 import {Header} from "./common/components/layout/header/Header";
 import {About} from "./common/components/layout/sections/about/About";
 import {TechStack} from "./common/components/layout/sections/techStack/TechStack";
-import {Projects} from "./common/components/layout/sections/projects/Projects";
 import {MailMe} from "./common/components/layout/sections/mailMe/MailMe";
 import {Footer} from "./common/components/layout/footer/Footer";
 import React from "react";
 import {myTheme} from "./styles/Theme.styled";
+import Projects from "./common/components/layout/sections/projects/Projects";
 
 
 function App() {
     return (
         <AppWrapper>
             <Header/>
-            <Main/>
-            <About/>
+            {/*<Main/>*/}
+            {/*<About/>*/}
             <TechStack/>
-            {/*<Projects/>*/}
+            <Projects/>
             {/*<MailMe/>*/}
             {/*<Footer/>*/}
         </AppWrapper>
