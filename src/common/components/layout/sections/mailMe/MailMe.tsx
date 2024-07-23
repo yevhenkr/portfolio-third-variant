@@ -19,12 +19,18 @@ const MailMeSection = styled.section`
     font-family: DMSans,sans-serif;
     font-weight: bold;
     margin-bottom: 200px;
+    @media (max-width: ${myTheme.screen.small}) {
+        margin-bottom: 50px;
+    }
 `
 const MailMeText = styled.h2`
 color: ${myTheme.color.title};
     font-size: 58px;
     font-family: DMSans,sans-serif;
     font-weight: bold;
+    @media (max-width: ${myTheme.screen.small}) {
+        font-size: 30px;
+    }
 `
 const MailLink = styled.a`
     background: linear-gradient(to left, #E70FAA, #13B0F5);
@@ -32,4 +38,7 @@ const MailLink = styled.a`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    @media (max-width: ${myTheme.screen.small}) {
+        font-size: 30px;
+    }
 `
