@@ -1,105 +1,112 @@
 @font-face {
-  font-family: Poppins;
-  src: url("./assets/fonts/poppins/Poppins-Bold.woff2") format("woff2"),
-  url("./assets/fonts/poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+    font-family: Poppins;
+    src: url("./assets/fonts/poppins/Poppins-Bold.woff2") format("woff2"),
+    url("./assets/fonts/poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Poppins;
-  src: local("Popins");
-  src: url("./assets/fonts/poppins/Poppins-Regular.woff2") format("woff2"),
-  url("./assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: Poppins;
+    src: local("Popins");
+    src: url("./assets/fonts/poppins/Poppins-Regular.woff2") format("woff2"),
+    url("./assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Poppins;
-  src: url("./assets/fonts/poppins/Poppins-Medium.woff2") format("woff2"),
-  url("./assets/fonts/poppins/Poppins-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
+    font-family: Poppins;
+    src: url("./assets/fonts/poppins/Poppins-Medium.woff2") format("woff2"),
+    url("./assets/fonts/poppins/Poppins-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Poppins;
-  src: url("./assets/fonts/poppins/Poppins-SemiBold.woff2") format("woff2"),
-  url("./assets/fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
+    font-family: Poppins;
+    src: url("./assets/fonts/poppins/Poppins-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Poppins;
-  src: url("./assets/fonts/poppins/Poppins-Light.woff2") format("woff2"),
-  url("./assets/fonts/poppins/Poppins-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
+    font-family: Poppins;
+    src: url("./assets/fonts/poppins/Poppins-Light.woff2") format("woff2"),
+    url("./assets/fonts/poppins/Poppins-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: DMSans;
-  src: url("./assets/fonts/dmSans/DMSans-Bold.woff2") format("woff2"),
-  url("./assets/fonts/dmSans/DMSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+    font-family: DMSans;
+    src: url("./assets/fonts/dmSans/DMSans-Bold.woff2") format("woff2"),
+    url("./assets/fonts/dmSans/DMSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: DMSans;
-  src: url("./assets/fonts/dmSans/DMSans-Medium.woff2") format("woff2"),
-  url("./assets/fonts/dmSans/DMSans-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
+    font-family: DMSans;
+    src: url("./assets/fonts/dmSans/DMSans-Medium.woff2") format("woff2"),
+    url("./assets/fonts/dmSans/DMSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-width: 365px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 365px;
 
-  @media (max-width:768px) {
-    max-width: 768px;
-    width: 100%;
-  }
+    @media (max-width: 768px) {
+        max-width: 768px;
+        width: 100%;
+    }
 
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-h2,h3,h4,h5,h6{
-  margin: 0;
-  font-family: Poppins, sans-serif;
+h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: Poppins, sans-serif;
 }
 
 ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 576px) {
+        font-size: 14px;
+    }
 }
-a,button {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  color: inherit;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
+
+a, button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
+
 /**{*/
 /*    outline: solid 1px red;*/
 /*}*/

@@ -15,8 +15,8 @@ function App() {
         <AppWrapper>
             <Header/>
             <Main/>
-            {/*<About/>*/}
-            {/*<TechStack/>*/}
+            <About/>
+            <TechStack/>
             {/*<Projects/>*/}
             {/*<MailMe/>*/}
             {/*<Footer/>*/}

@@ -16,7 +16,7 @@ export const About = () => {
                 <Experience/>
                 <Education/>
             </LeftSide>
-            <AbstractImg><AbstractSVG/></AbstractImg>
+            <AbstractImg><AbstractSVG /></AbstractImg>
         </AboutSection>
     );
 };
@@ -33,6 +33,11 @@ export const TitleStyled = styled.h2`
     font-size: 42px;
     font-weight: bold;
     color: ${myTheme.color.title};
+
+    @media (max-width: ${myTheme.screen.small}) {
+        font-size: 20px;
+    margin-bottom: 10px;
+    }
 `
 
 const AboutSection = styled.section`
@@ -40,6 +45,10 @@ const AboutSection = styled.section`
     display: flex;
     flex-direction: row;
     margin-bottom: 200px;
+    @media (max-width: ${myTheme.screen.small}) {
+        margin-bottom: 100px;
+        padding: 0 10px;
+    }
 `
 
 
@@ -49,6 +58,9 @@ const AboutText = styled.p`
     display: flex;
     flex-direction: column;
     margin-bottom: 38px;
+    @media (max-width: ${myTheme.screen.small}) {
+        margin-bottom: 20px;
+    }
 `
 
 
@@ -56,4 +68,11 @@ const AbstractImg = styled.div`
     position: absolute;
     max-width: 834px;
     right: -230px;
+    margin-bottom: 38px;
+    @media (max-width: ${myTheme.screen.small}) {
+        top: -225px;
+        max-width: 234px;
+        right: 242px;
+        margin-bottom: 20px;
+    }
 `
