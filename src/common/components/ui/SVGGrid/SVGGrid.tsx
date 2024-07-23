@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {myTheme} from "../../../../styles/Theme.styled";
 
 interface SVGGridProps {
     icons: React.ReactNode[];
@@ -23,14 +24,15 @@ const GridContainer = styled.div`
     left: 0;
     right: 0;
     width: 100%;
+    @media (max-width: ${myTheme.screen.small}) {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
 `;
 
 const GridItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-    flex: 1;
-  //padding: 8px;
-  //border: 1px solid #ddd;
-  //border-radius: 8px;
 `;

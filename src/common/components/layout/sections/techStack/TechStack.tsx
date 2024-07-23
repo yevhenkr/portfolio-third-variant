@@ -30,6 +30,9 @@ const TechSection = styled.section`
     flex-direction: column;
     align-items: center;
     padding-bottom: 214px;
+    @media (max-width: ${myTheme.screen.small}) {
+        padding-bottom: 50px;
+    }
 `
 
 const Title = styled.h2`
@@ -37,10 +40,18 @@ const Title = styled.h2`
     font-size: 48px;
     color: ${myTheme.color.title};
     margin-bottom: 50px;
+    @media (max-width: ${myTheme.screen.small}) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 `
 const SubTitle = styled.h3`
     font-weight: 400;
     font-size: 32px;
     color: ${myTheme.color.text};
     margin-bottom: 110px;
+    @media (max-width: ${myTheme.screen.small}) {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
 `
