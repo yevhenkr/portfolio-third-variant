@@ -57,7 +57,6 @@ const StyledButton = styled.button`
 
     position: fixed;
     z-index: 999;
-    //top: calc(var(--header-height) + 2em);
     right: 0;
 
     display: inline-flex;
@@ -66,7 +65,7 @@ const StyledButton = styled.button`
     padding: 5px 3px;
 
     background-color: ${myTheme.color.text};
-    //color: ${myTheme.color.blackWhite};
+    color: ${myTheme.color.blackWhite};
     border: 1px solid black;
     border-right: 0;
     border-radius: 8px 0 0 8px;
@@ -80,8 +79,8 @@ const StyledButton = styled.button`
     }
 
     @media (max-width: 600px) {
-        //top: calc(var(--header-height) + 2px);
-        width: 14px;
-        padding: 0 2px;
+        position: absolute;
+        width: 24px;
+        right: 0;
     }
 `

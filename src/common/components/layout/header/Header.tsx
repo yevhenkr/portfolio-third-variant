@@ -33,7 +33,7 @@ export const Header = () => {
                 <Burger onClick={() => {
                     handleClick()
                 }}>
-                    <BurgerIcon/>
+                    <BurgerIcon color={`${myTheme.color.title}`}/>
                 </Burger>
                 <MobileMenu headerHeight={headerHeight} isMenu={squares} changeMenu={handleClick}/>
             </FlexWrapper>
