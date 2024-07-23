@@ -14,7 +14,7 @@ function App() {
     return (
         <AppWrapper>
             <Header/>
-            {/*<Main/>*/}
+            <Main/>
             {/*<About/>*/}
             {/*<TechStack/>*/}
             {/*<Projects/>*/}
@@ -35,6 +35,6 @@ const AppWrapper = styled.div`
 
     @media (max-width: ${myTheme.screen.small}) {
         max-width: ${myTheme.screen.small};
-        background-color: red;
+        background-color: ${myTheme.color.backGround};
     }
 `

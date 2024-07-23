@@ -8,16 +8,29 @@ import Tilt from 'react-parallax-tilt';
 export const Main = () => {
     return (
         <StyledMain id={'Home'}>
-            <FlexWrapper display={"flex"} flexDirection={"column"} max_width={"630px"}>
+            <TitleWrap>
                 <StyledH2>Hi 👋, My name is Evgen I build things for web</StyledH2>
                 <StyledH1>I’m Front-end Dev</StyledH1>
-            </FlexWrapper>
+            </TitleWrap>
             <Tilt>
                 <StyledIcon src={userPhoto} alt={"User photo"}></StyledIcon>
             </Tilt>
         </StyledMain>
     );
 };
+
+const TitleWrap = styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 630px;
+    @media (max-width: ${myTheme.screen.small}) {
+        max-width: ${myTheme.screen.small};
+        max-width: 290px;
+        margin: auto 0;
+    }
+`
+
+
 const StyledMain = styled.main`
     display: flex;
     flex-direction: row;
@@ -29,6 +42,10 @@ const StyledMain = styled.main`
     font-family: Poppins, sans-serif;
     font-weight: bold;
     font-size: 40px;
+    @media (max-width: ${myTheme.screen.small}) {
+        max-width: calc(100vw - 20px);
+        padding: 80px 10px 0 10px;
+    }
 `
 const StyledH1 = styled.h1`
     font-weight: 500;
@@ -37,9 +54,14 @@ const StyledH1 = styled.h1`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    @media (max-width: ${myTheme.screen.small}) {
+        font-size: 20px;
 `
 const StyledH2 = styled.h2`
-    color: ${myTheme.color.title}
+    color: ${myTheme.color.title};
+    @media (max-width: ${myTheme.screen.small}) {
+   font-size: 20px;
+}
 `
 const StyledIcon = styled.img`
     max-width: 350px;
@@ -57,5 +79,9 @@ const StyledIcon = styled.img`
         background-image: url(${Abstract});
         background-repeat: no-repeat;
         background-size: 100%;
+    }
+
+    @media (max-width: ${myTheme.screen.small}) {
+        max-width: 250px;
     }
 `
