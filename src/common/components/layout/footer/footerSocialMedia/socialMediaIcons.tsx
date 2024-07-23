@@ -38,6 +38,9 @@ const SocialList = styled.ul`
   justify-content: end;
     align-items: center;
   padding-left: 0;
+    @media (max-width: ${myTheme.screen.medium}) {
+        display: none;
+    }
 `
 const SocialItem = styled.li``
 const SocialLink = styled.a`

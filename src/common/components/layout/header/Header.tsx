@@ -5,6 +5,8 @@ import {FlexWrapper} from '../../ui/flexWrapper/FlexWrapper';
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import SocialMediaIcons from "../footer/footerSocialMedia/socialMediaIcons";
 import {myTheme} from "../../../../styles/Theme.styled";
+import {BurgerIcon} from "../../../../assets/icons/burgerIcon";
+import {MobileMenu} from "../mobileMenu/MobileMenu";
 
 
 export const Header = () => {
@@ -16,16 +18,37 @@ export const Header = () => {
             setHeaderHeight(height);
         }
     }, []);
+
+    const [squares, setSquares] = useState<boolean>(false);
+    const handleClick = () => {
+        setSquares(!squares);
+    };
+
     return (
         <HeaderWrap ref={headerRef} flexDirection={"row"} display={"flex"}>
             <Logo src={logo} alt={"Logo images"}/>
             <FlexWrapper flexDirection={"row"} display={"flex"}>
                 <HeaderMenu height={headerHeight}/>
                 <SocialMediaIcons/>
+                <Burger onClick={() => {
+                    handleClick()
+                }}>
+                    <BurgerIcon/>
+                </Burger>
+                <MobileMenu headerHeight={headerHeight} isMenu={squares} changeMenu={handleClick}/>
             </FlexWrapper>
         </HeaderWrap>
     );
 };
+
+const Burger = styled.a`
+    display: none;
+    position: relative;
+    @media (max-width: ${myTheme.screen.medium}) {
+        display: flex;
+        right: 10px;
+    }
+`
 
 const HeaderWrap = styled(FlexWrapper)`
     position: fixed;
@@ -35,14 +58,21 @@ const HeaderWrap = styled(FlexWrapper)`
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    padding-top: 40px;
     background-color: ${myTheme.color.backGround};
     z-index: 2;
+    @media (max-width: ${myTheme.screen.small}) {
+        max-width: ${myTheme.screen.small};
+        padding: 10px 0;
+    }
 `;
 
 const Logo = styled.img`
     max-width: 100px;
     max-height: 100px;
     object-fit: contain;
+    @media (max-width: ${myTheme.screen.small}) {
+        position: relative;
+        left: 10px;
+    }
 `;
 

@@ -7,18 +7,19 @@ import {Projects} from "./common/components/layout/sections/projects/Projects";
 import {MailMe} from "./common/components/layout/sections/mailMe/MailMe";
 import {Footer} from "./common/components/layout/footer/Footer";
 import React from "react";
+import {myTheme} from "./styles/Theme.styled";
 
 
 function App() {
     return (
         <AppWrapper>
             <Header/>
-            <Main/>
-            <About/>
-            <TechStack/>
-            <Projects/>
-            <MailMe/>
-            <Footer/>
+            {/*<Main/>*/}
+            {/*<About/>*/}
+            {/*<TechStack/>*/}
+            {/*<Projects/>*/}
+            {/*<MailMe/>*/}
+            {/*<Footer/>*/}
         </AppWrapper>
     );
 }
@@ -31,4 +32,9 @@ const AppWrapper = styled.div`
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: ${myTheme.screen.small}) {
+        max-width: ${myTheme.screen.small};
+        background-color: red;
+    }
 `

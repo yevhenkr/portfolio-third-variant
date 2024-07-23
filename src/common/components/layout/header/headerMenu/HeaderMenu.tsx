@@ -19,9 +19,9 @@ export const HeaderMenu = (props: PropsType) => {
                 behavior: "smooth"
             });
         }
-        // if (props.closeMobileMenu) {
-        //     props.closeMobileMenu();
-        // }
+        if (props.closeMobileMenu) {
+            props.closeMobileMenu();
+        }
     };
 
     return (
