@@ -14,12 +14,12 @@ function App() {
     return (
         <AppWrapper>
             <Header/>
-            {/*<Main/>*/}
-            {/*<About/>*/}
+            <Main/>
+            <About/>
             <TechStack/>
             <Projects/>
-            {/*<MailMe/>*/}
-            {/*<Footer/>*/}
+            <MailMe/>
+            <Footer/>
         </AppWrapper>
     );
 }

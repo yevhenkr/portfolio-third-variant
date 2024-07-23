@@ -17,7 +17,7 @@ export const Footer = () => {
                     <SocialMediaIcons/>
                 </FlexWrapper>
             </WrapStyled>
-            <FlexWrapper display={"flex"} flexDirection={"row"} justify={"space-between"}>
+            <StyledWrap >
                 <StyledHeaderMenu height={heightMenu.large}/>
                 <SmallStyled>
                     Designed and built by
@@ -27,10 +27,22 @@ export const Footer = () => {
                     &
                     <Highlight3>&nbsp;Coffee</Highlight3>
                 </SmallStyled>
-            </FlexWrapper>
+            </StyledWrap>
         </StyledFooter>
     );
 };
+
+const StyledWrap = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (
+        max-width: ${myTheme.screen.small}) {
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+`
+
 const StyledHeaderMenu = styled(HeaderMenu)`
     margin-left: 10px;
 `
@@ -43,6 +55,10 @@ const SmallStyled = styled.small`
     color: ${myTheme.color.text};
     display: flex;
     align-items: center;
+    @media (
+        max-width: ${myTheme.screen.small}) {
+        padding: 0 20px 0;
+    }
 `
 
 const WrapStyled = styled.div`
@@ -50,17 +66,18 @@ const WrapStyled = styled.div`
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid black;
-    padding-bottom: 40px
+    padding-bottom: 40px;
+    @media (
+        max-width: ${myTheme.screen.small}) {
+        padding: 0 20px;
+        padding-bottom: 20px;
+    }
 `
 
 const SpanStyled = styled.span`
     color: ${myTheme.color.text};
     width: 100%;`
 
-const Logo = styled.img`
-    max-width: 100px;
-    width: 50%;
-`;
 
 const Highlight1 = styled.span`
     background: linear-gradient(to right, #139ef5, #587CDD);
