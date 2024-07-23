@@ -105,6 +105,9 @@ const ProjectsSection = styled.section`
     align-items: center;
     margin: 0 200px;
     margin-bottom: 184px;
+    @media (max-width: ${myTheme.screen.small}) {
+        margin-bottom: 50px;
+    }
 `
 
 const Title = styled.h2`
