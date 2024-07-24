@@ -9,7 +9,7 @@ type Props = {
     children: ReactNode
 }
 
-const ThemeContext = createContext<'dark' | 'light'>('dark')
+export const ThemeContext = createContext<'dark' | 'light'>('dark')
 
 export const ThemeProvider = ({children}: Props) => {
     const [theme, setTheme] = useState<'dark' | 'light'>(() => {
@@ -78,8 +78,8 @@ const StyledButton = styled.button`
         transition: all 0.2s ease;
     }
 
-    @media (max-width: 600px) {
-        position: absolute;
+    @media (max-width: ${myTheme.screen.small}) {
+        position: fixed;
         width: 24px;
         right: 0;
     }

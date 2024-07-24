@@ -16,7 +16,6 @@ const GlobalStyles = createGlobalStyle`
         --color-black-white: #fff;
         --color-button-theme: #666666;
         
-        
         --color-black: #07253C;
         --color-mailTitle: #1E0E62;
         --color-buttonBG: #D7FFE0;
@@ -36,8 +35,6 @@ const GlobalStyles = createGlobalStyle`
         --color-proj-link: #000;
         --color-black-white: #000;
         --color-button-theme:  #666666;
-        
-        
         
         --color-black: #fff;
     }

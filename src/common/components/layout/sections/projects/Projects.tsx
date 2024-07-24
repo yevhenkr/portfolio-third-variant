@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styled from "styled-components";
-import { FlexWrapper } from "../../../ui/flexWrapper/FlexWrapper";
-import { LinkIcon } from "../../../../../assets/icons/linkIcon";
-import { GitHubIcon } from "../../../../../assets/icons/gitHubIcon";
-import { myProjects, myTheme } from "../../../../../styles/Theme.styled";
-
-
+import {FlexWrapper} from "../../../ui/flexWrapper/FlexWrapper";
+import {LinkIcon} from "../../../../../assets/icons/linkIcon";
+import {myProjects, myTheme} from "../../../../../styles/Theme.styled";
+import git from "../../../../../assets/img/git.png";
+import gitWhite from "../../../../../assets/img/git-white.png";
+import {ThemeContext} from "../../../ui/themeProvider/ThemeProvider";
 
 const Projects = () => {
+    const theme = useContext(ThemeContext);
+    const imageSrc = theme === 'dark' ? gitWhite : git;
     return (
         <ProjectsSection id={'Projects'}>
             <Title>Projects</Title>
@@ -15,25 +17,27 @@ const Projects = () => {
             <ProjectsGrid>
                 {myProjects.map(proj => (
                     <GridItem key={proj.name}>
-                        <ImgStiled src={proj.img} alt={"Project image"} />
+                        <ImgStiled src={proj.img} alt={"Project image"}/>
                         <CardTextPart>
                             <FlexWrapper>
                                 <NameProject>{proj.name}</NameProject>
                                 <Description>{proj.description}</Description>
                                 <FlexWrapper display={"flex"} flexDirection={"row"} width={"100%"}
-                                             padding={"0 0 20px 0"}>
+                                             padding={"0 0 10px 0"}>
                                     <TechStack>Tech stack :</TechStack>
                                     <TechDescriptions>{proj.techStackDetails}</TechDescriptions>
                                 </FlexWrapper>
                             </FlexWrapper>
                             <TextWrap>
                                 <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}>
-                                    <LinkIcon stroke={`${myTheme.color.title}`} />
+                                    <LinkIcon stroke={`${myTheme.color.title}`}/>
                                     <LinkStyled href={proj.previewLink}>
                                         Live Preview</LinkStyled>
                                 </FlexWrapper>
                                 <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}>
-                                    <GitHubIcon />
+                                    <FlexWrapper padding={"10px 0 0 0"}>
+                                        <IconStyled src={imageSrc} alt={"Project image"}/>
+                                    </FlexWrapper>
                                     <LinkStyled href={proj.codeLink}>
                                         View Code</LinkStyled>
                                 </FlexWrapper>
@@ -44,7 +48,9 @@ const Projects = () => {
         </ProjectsSection>
     );
 };
-
+const IconStyled = styled.img`
+    width: 100%;
+    height: 100%;`
 const TextWrap = styled(FlexWrapper)`
     display: flex;
     flex-direction: row;
