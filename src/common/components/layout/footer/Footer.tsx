@@ -9,15 +9,15 @@ import {heightMenu, myTheme} from "../../../../styles/Theme.styled";
 export const Footer = () => {
     return (
         <StyledFooter id={'Contact'}>
-            <WrapStyled>
+            <WrapTopFooter>
                 <LogoBlackIcon/>
                 <FlexWrapper display={"flex"} flexDirection={"row"} width={"50%"} align_i={"center"}>
                     <SpanStyled>+91 12345 09876</SpanStyled>
                     <SpanStyled>info@example.com</SpanStyled>
                     <SocialMediaIcons/>
                 </FlexWrapper>
-            </WrapStyled>
-            <StyledWrap >
+            </WrapTopFooter>
+            <WrapBottomFooter >
                 <StyledHeaderMenu height={heightMenu.large}/>
                 <SmallStyled>
                     Designed and built by
@@ -27,15 +27,18 @@ export const Footer = () => {
                     &
                     <Highlight3>&nbsp;Coffee</Highlight3>
                 </SmallStyled>
-            </StyledWrap>
+            </WrapBottomFooter>
         </StyledFooter>
     );
 };
 
-const StyledWrap = styled.div`
+const WrapBottomFooter = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 860px) {
+        justify-content: center;
+    }
     @media (
         max-width: ${myTheme.screen.small}) {
         justify-content: center;
@@ -45,10 +48,16 @@ const StyledWrap = styled.div`
 
 const StyledHeaderMenu = styled(HeaderMenu)`
     margin-left: 10px;
+    @media (max-width: 860px) {
+        padding: 0 20px 0;
+        display: none;
+    }
 `
 const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
 `
 
 const SmallStyled = styled.small`
@@ -61,7 +70,7 @@ const SmallStyled = styled.small`
     }
 `
 
-const WrapStyled = styled.div`
+const WrapTopFooter = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;

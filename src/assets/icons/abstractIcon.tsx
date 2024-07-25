@@ -1,7 +1,7 @@
 import * as React from "react"
 import { SVGProps, memo } from "react"
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
-    <svg width="621" height="500" viewBox="0 0 621 1019" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="621" height="1019" viewBox="0 0 621 1019" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.5">
             <path d="M714.509 231.003L597.003 299.867" stroke="#B2B2B2"/>
             <path d="M645.645 113.497L528.139 182.361" stroke="url(#paint0_linear_15_2063)"/>

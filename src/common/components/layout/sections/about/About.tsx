@@ -15,13 +15,27 @@ export const About = () => {
                     a set of static files: HTML/CSS/JS.</AboutText>
                 <Experience/>
                 <Education/>
+                <AbstractImg>
+                    <AbstractSVG />
+                </AbstractImg>
             </LeftSide>
-            <AbstractImg>
-                <AbstractSVG />
-            </AbstractImg>
         </AboutSection>
     );
 };
+
+const AbstractImg = styled.div`
+    position: absolute;
+    max-width: 834px;
+    right: 0;
+    margin-bottom: 38px;
+    @media (max-width: ${myTheme.screen.small}) {
+            top: 400px;
+            max-width: 382px;
+            right: 0;
+            overflow: hidden;
+            object-fit: cover;
+    }
+`
 
 const LeftSide = styled.div`
     display: flex;
@@ -60,19 +74,5 @@ const AboutText = styled.p`
     margin-bottom: 38px;
     @media (max-width: ${myTheme.screen.small}) {
         margin-bottom: 20px;
-    }
-`
-
-const AbstractImg = styled.div`
-    position: absolute;
-    max-width: 834px;
-    //right: -230px;
-    margin-bottom: 38px;
-    @media (max-width: ${myTheme.screen.small}) {
-        top: 0;
-        max-width: 382px;
-        left: 0;
-        overflow: hidden;
-        object-fit: cover;
     }
 `

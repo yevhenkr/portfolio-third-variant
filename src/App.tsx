@@ -8,6 +8,7 @@ import {Footer} from "./common/components/layout/footer/Footer";
 import React from "react";
 import {myTheme} from "./styles/Theme.styled";
 import Projects from "./common/components/layout/sections/projects/Projects";
+import {AbstractSVG} from "./assets/icons/abstractIcon";
 
 
 function App() {
