@@ -66,12 +66,13 @@ const AboutText = styled.p`
 const AbstractImg = styled.div`
     position: absolute;
     max-width: 834px;
-    right: -230px;
+    //right: -230px;
     margin-bottom: 38px;
     @media (max-width: ${myTheme.screen.small}) {
-        top: -225px;
-        max-width: 234px;
-        right: 242px;
-        margin-bottom: 20px;
+        top: 0;
+        max-width: 382px;
+        left: 0;
+        overflow: hidden;
+        object-fit: cover;
     }
 `

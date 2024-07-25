@@ -82,9 +82,12 @@ const ProjectsGrid = styled(FlexWrapper)`
     row-gap: 60px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    @media (max-width: ${myTheme.screen.small}) {
+    @media (max-width: ${myTheme.screen.extraLarge}) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+    } 
+    @media (max-width: ${myTheme.screen.large}) {
+        grid-template-columns: repeat(1, 1fr);
     }
 `
 
