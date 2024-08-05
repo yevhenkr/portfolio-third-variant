@@ -61,9 +61,11 @@ const AboutSection = styled.section`
     display: flex;
     flex-direction: row;
     margin-bottom: 200px;
+    @media (max-width: ${myTheme.screen.medium}) {
+        padding: 0 10px;
+    }
     @media (max-width: ${myTheme.screen.small}) {
         margin-bottom: 100px;
-        padding: 0 10px;
     }
 `
 
