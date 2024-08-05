@@ -18,24 +18,25 @@ const Projects = () => {
                 {myProjects.map((proj,index) => (
                     <GridItem key={index}>
                         <ImgStiled src={proj.img} alt={"Project image"}/>
+
                         <CardTextPart>
                             <FlexWrapper>
                                 <NameProject>{proj.name}</NameProject>
                                 <Description>{proj.description}</Description>
-                                <FlexWrapper display={"flex"} flex_direction={"row"} width={"100%"}
-                                             padding={"0 0 10px 0"}>
+                                <FlexWrapper display={"flex"} $flex_direction={"row"} width={"100%"}
+                                             $padding={"0 0 10px 0"}>
                                     <TechStack>Tech stack :</TechStack>
                                     <TechDescriptions>{proj.techStackDetails}</TechDescriptions>
                                 </FlexWrapper>
                             </FlexWrapper>
                             <TextWrap>
-                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}>
+                                <FlexWrapper $gap={"10px"} display={"flex"} $align_i={"center"}>
                                     <LinkIcon stroke={`${myTheme.color.title}`}/>
                                     <LinkStyled href={proj.previewLink}>
                                         Live Preview</LinkStyled>
                                 </FlexWrapper>
-                                <FlexWrapper gap={"10px"} display={"flex"} align_i={"center"}>
-                                    <FlexWrapper padding={"10px 0 0 0"}>
+                                <FlexWrapper $gap={"10px"} display={"flex"} $align_i={"center"}>
+                                    <FlexWrapper $padding={"10px 0 0 0"}>
                                         <IconStyled src={imageSrc} alt={"Project image"}/>
                                     </FlexWrapper>
                                     <LinkStyled href={proj.codeLink}>

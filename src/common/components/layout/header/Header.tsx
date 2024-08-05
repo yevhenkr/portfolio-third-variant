@@ -25,9 +25,9 @@ export const Header = () => {
     };
 
     return (
-        <HeaderWrap ref={headerRef} flex_direction={"row"} display={"flex"}>
+        <HeaderWrap ref={headerRef} $flex_direction={"row"} display={"flex"}>
             <Logo src={logo} alt={"Logo images"}/>
-            <FlexWrapper flex_direction={"row"} display={"flex"}>
+            <FlexWrapper $flex_direction={"row"} display={"flex"}>
                 <HeaderMenu height={headerHeight}/>
                 <SocialMediaIcons/>
                 <Burger onClick={() => {
