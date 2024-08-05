@@ -67,9 +67,14 @@ const HeaderWrap = styled(FlexWrapper)`
 `;
 
 const Logo = styled.img`
+    padding: 40px 0;
     max-width: 100px;
     max-height: 100px;
     object-fit: contain;
+    @media (max-width: ${myTheme.screen.medium}) {
+        padding: 10px 0;
+        padding-left: 10px;
+    }
     @media (max-width: ${myTheme.screen.small}) {
         position: relative;
         left: 10px;
