@@ -15,8 +15,8 @@ const Projects = () => {
             <Title>Projects</Title>
             <SubTitle>Things I’ve built so far</SubTitle>
             <ProjectsGrid>
-                {myProjects.map(proj => (
-                    <GridItem key={proj.name}>
+                {myProjects.map((proj,index) => (
+                    <GridItem key={index}>
                         <ImgStiled src={proj.img} alt={"Project image"}/>
                         <CardTextPart>
                             <FlexWrapper>
