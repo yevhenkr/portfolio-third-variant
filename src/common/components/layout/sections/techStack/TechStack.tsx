@@ -50,6 +50,9 @@ const SubTitle = styled.h3`
     font-size: 32px;
     color: ${myTheme.color.text};
     margin-bottom: 110px;
+    @media (max-width: ${myTheme.screen.medium}) {
+        text-align: center;
+    }
     @media (max-width: ${myTheme.screen.small}) {
         font-size: 18px;
         margin-bottom: 50px;
