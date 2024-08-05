@@ -62,6 +62,7 @@ const AboutSection = styled.section`
     flex-direction: row;
     margin-bottom: 200px;
     @media (max-width: ${myTheme.screen.medium}) {
+        max-width: calc(100vh - 20px);
         padding: 0 10px;
     }
     @media (max-width: ${myTheme.screen.small}) {

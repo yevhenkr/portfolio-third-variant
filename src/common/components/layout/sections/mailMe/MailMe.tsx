@@ -19,6 +19,12 @@ const MailMeSection = styled.section`
     font-family: DMSans,sans-serif;
     font-weight: bold;
     margin-bottom: 200px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    @media (max-width: ${myTheme.screen.medium}) {
+    }
     @media (max-width: ${myTheme.screen.small}) {
         margin-bottom: 50px;
     }

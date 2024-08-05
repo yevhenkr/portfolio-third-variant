@@ -45,8 +45,8 @@ const StyledMain = styled.main`
     @media (max-width: ${myTheme.screen.medium}) {
         width:calc(100vw - 20px);
         font-size: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     @media (max-width: ${myTheme.screen.small}) {
