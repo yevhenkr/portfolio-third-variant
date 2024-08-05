@@ -12,27 +12,27 @@ export const Experience = () => {
     return (
         <>
             <TitleStyled>Work Experience</TitleStyled>
-            <SectionWrap display={"flex"} flexDirection={"column"} margin={" 0 0 38px 0"}>
+            <SectionWrap display={"flex"} flex_direction={"column"} margin={" 0 0 38px 0"}>
 
                 {myExperience.map((work, index) => (
                     <WorkWrap key={index} index={index}>
-                        <FlexWrapper display={"flex"} flexDirection={"row"}
+                        <FlexWrapper display={"flex"} flex_direction={"row"}
                                      justify={"space-between"}>
                             <Positions>{work.position}</Positions>
                             <TimeWork title={work.time}/>
                         </FlexWrapper>
-                        <FlexWrapper display={"flex"} flexDirection={"row"} padding={"0 0 0 2px"}>
-                            <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"}
+                        <FlexWrapper display={"flex"} flex_direction={"row"} padding={"0 0 0 2px"}>
+                            <FlexWrapper display={"flex"} flex_direction={"row"} align_i={"center"}
                                          padding={" 0 68px 0 0"}>
                                 <HouseIcon/>
                                 <StyledText>{work.product}</StyledText>
                             </FlexWrapper>
-                            <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"}>
+                            <FlexWrapper display={"flex"} flex_direction={"row"} align_i={"center"}>
                                 <LocationIcon/>
                                 <StyledText>{work.location}</StyledText>
                             </FlexWrapper>
                             <CalendarWrap>
-                                <FlexWrapper display={"flex"} flexDirection={"row"} align_i={"center"}>
+                                <FlexWrapper display={"flex"} flex_direction={"row"} align_i={"center"}>
                                     <CalendarIcon/>
                                     <StyledText>{work.timePeriod}</StyledText>
                                 </FlexWrapper>

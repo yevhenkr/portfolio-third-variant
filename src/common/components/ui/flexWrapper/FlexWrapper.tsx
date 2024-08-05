@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 type FlexWrapperType = {
   align_i?: 'baseline' | 'center' | 'flex-end' | 'flex-start' | 'stretch'| 'space-around' | 'space-between'
-  flexDirection?: 'column' | 'column-reverse' | 'row' | 'row-reverse'
+  flex_direction?: 'column' | 'column-reverse' | 'row' | 'row-reverse'
   gap?: string
   justify?: 'center' | 'flex-end' | 'flex-start' | 'space-around' | 'space-between' | 'space-evenly'
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse'
@@ -24,7 +24,7 @@ type FlexWrapperType = {
 
 export const FlexWrapper = styled.div<FlexWrapperType>`
     display: ${props => props.display || ''};
-    flex-direction: ${props => props.flexDirection || 'row'};
+    flex-direction: ${props => props.flex_direction || 'row'};
     justify-content: ${props => props.justify || ''};
     align-items: ${props => props.align_i || 'stretch'};
     flex-wrap: ${props => props.wrap || 'nowrap'};

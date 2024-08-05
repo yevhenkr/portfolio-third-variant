@@ -11,7 +11,7 @@ export const Footer = () => {
         <StyledFooter id={'Contact'}>
             <WrapTopFooter>
                 <LogoBlackIcon/>
-                <FlexWrapper display={"flex"} flexDirection={"row"} width={"50%"} align_i={"center"}>
+                <FlexWrapper display={"flex"} flex_direction={"row"} width={"50%"} align_i={"center"}>
                     <SpanStyled>+91 12345 09876</SpanStyled>
                     <SpanStyled>info@example.com</SpanStyled>
                     <SocialMediaIcons/>

@@ -22,7 +22,7 @@ const Projects = () => {
                             <FlexWrapper>
                                 <NameProject>{proj.name}</NameProject>
                                 <Description>{proj.description}</Description>
-                                <FlexWrapper display={"flex"} flexDirection={"row"} width={"100%"}
+                                <FlexWrapper display={"flex"} flex_direction={"row"} width={"100%"}
                                              padding={"0 0 10px 0"}>
                                     <TechStack>Tech stack :</TechStack>
                                     <TechDescriptions>{proj.techStackDetails}</TechDescriptions>
