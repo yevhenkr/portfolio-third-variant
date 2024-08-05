@@ -41,8 +41,15 @@ const StyledMain = styled.main`
     font-family: Poppins, sans-serif;
     font-weight: bold;
     font-size: 40px;
+
+    @media (max-width: ${myTheme.screen.medium}) {
+        width:calc(100vw - 20px);
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
     @media (max-width: ${myTheme.screen.small}) {
-        max-width: calc(100vw - 20px);
         padding: 80px 10px 0 10px;
     }
 `
@@ -53,14 +60,21 @@ const StyledH1 = styled.h1`
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    @media (max-width: ${myTheme.screen.medium}) {
+        max-width: 400px;
+        font-size: 30px;
+    }
     @media (max-width: ${myTheme.screen.small}) {
         font-size: 20px;
 `
 const StyledH2 = styled.h2`
     color: ${myTheme.color.title};
+    @media (max-width: ${myTheme.screen.medium}) {
+        max-width: 400px;
+    }
     @media (max-width: ${myTheme.screen.small}) {
-   font-size: 20px;
-}
+        font-size: 20px;
+    }
 `
 const StyledIcon = styled.img`
     max-width: 350px;
@@ -80,6 +94,9 @@ const StyledIcon = styled.img`
         background-size: 100%;
     }
 
+    @media (max-width: ${myTheme.screen.medium}) {
+        max-width: 300px;
+    }
     @media (max-width: ${myTheme.screen.small}) {
         max-width: 250px;
     }
