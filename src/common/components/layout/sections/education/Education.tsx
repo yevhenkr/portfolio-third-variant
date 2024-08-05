@@ -10,7 +10,7 @@ export const Education = () => {
     return (
         <>
             <TitleStyled>Education</TitleStyled>
-            <WorkWrap index={0} >
+            <WorkWrap $index={0} >
                 <FlexWrapper display={"flex"} $flex_direction={"row"}
                              $justify={"space-between"}>
                     <Positions>Bachelor in Electronics & Communication</Positions>

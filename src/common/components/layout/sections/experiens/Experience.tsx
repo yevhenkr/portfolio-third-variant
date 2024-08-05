@@ -15,7 +15,7 @@ export const Experience = () => {
             <SectionWrap display={"flex"} $flex_direction={"column"} $margin={" 0 0 38px 0"}>
 
                 {myExperience.map((work, index) => (
-                    <WorkWrap key={index} index={index}>
+                    <WorkWrap key={index} $index={index}>
                         <FlexWrapper display={"flex"} $flex_direction={"row"}
                                      $justify={"space-between"}>
                             <Positions>{work.position}</Positions>
@@ -55,14 +55,14 @@ export const SectionWrap = styled(FlexWrapper)`
 `
 
 interface WorkWrapProps {
-    index: number;
+    $index: number;
 }
 export const WorkWrap = styled(FlexWrapper)<WorkWrapProps>`
     display: flex;
     flex-direction: column;
     padding-bottom: 24px;
     position: relative;
-    padding-top: ${({index}) => (index === 1 || index === 2) ? "30px" : ''};
+    padding-top: ${({$index}) => ($index === 1 || $index === 2) ? "30px" : ''};
 
     &::before {
         content: "";
