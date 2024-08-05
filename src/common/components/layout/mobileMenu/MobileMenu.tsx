@@ -12,14 +12,14 @@ type PropsType = {
 
 export const MobileMenu: React.FC<PropsType> = ({isMenu, changeMenu, headerHeight}) => {
     return (
-        <Menu isMenu={isMenu}>
+        <Menu $isMenu={isMenu}>
             <CloseButton onClick={changeMenu}><StyledCloseIcon/></CloseButton>
             <MenuButtons height={headerHeight} closeMobileMenu={changeMenu}/>
         </Menu>
     );
 };
 
-const Menu = styled.div<{ isMenu: boolean }>`
+const Menu = styled.div<{ $isMenu?: boolean }>`
     position: absolute;
     display: flex;
     justify-content: center;
@@ -28,8 +28,8 @@ const Menu = styled.div<{ isMenu: boolean }>`
     background-color: ${myTheme.color.backGround};
     top: 0;
     left: 0;
-    opacity: ${props => (props.isMenu ? 1 : 0)};
-    transform: ${props => (props.isMenu ? 'translateY(0)' : 'translateY(-100%)')};
+    opacity: ${(props) => (props.$isMenu ? 1 : 0)};
+    transform: ${(props) => (props.$isMenu ? 'translateY(0)' : 'translateY(-100%)')};
     transition: opacity 0.5s ease, transform 0.5s ease;
 `;
 
